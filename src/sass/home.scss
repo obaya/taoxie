@@ -1,0 +1,16 @@
+$mainColor:#eff;
+$bgColor:#666;
+$fontSize:30px;
+
+.box{
+    width: 200px;padding:10px;background-color: $bgColor;
+    h4{
+        font-size:$fontSize;color:#9e3;
+
+    }
+    li{
+        list-style:none;
+        border:1px solid $mainColor;
+        font-size:$fontSize;
+    }
+};

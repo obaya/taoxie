@@ -1,0 +1,16 @@
+.box {
+  width: 200px;
+  padding: 10px;
+  background-color: #666;
+}
+
+.box h4 {
+  font-size: 30px;
+  color: #9e3;
+}
+
+.box li {
+  list-style: none;
+  border: 1px solid #eff;
+  font-size: 30px;
+}
