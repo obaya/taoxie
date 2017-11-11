@@ -1,0 +1,286 @@
+.all{
+    min-width: 950px;
+}
+.container{
+    width: 950px;
+}
+/*头部样式*/
+.headerS{
+    height: 90px;
+
+}
+
+
+.headerS h4{
+    float: left;
+    padding-top:16px;
+}
+.headerS h4 a{
+    display:block;
+    width: 170px;
+    height: 58px; 
+    background:url('../img/reg-self.png') no-repeat 0 0;
+}
+
+.headerS .fr{
+    padding-top:30px;
+}
+.headerS .fr .tel{
+    margin-left:100px;
+    display:block;
+    width: 146px;
+    height: 20px;
+    background:url('../img/reg-self.png') no-repeat 0 -62px;
+}
+.headerS .fr ul li{
+    float: left;
+    margin-right:5px;
+}
+.headerS .fr .zheng{
+    display:block;
+    width: 68px;
+    height: 21px;
+    background:url('../img/reg-self.png') no-repeat 0 -418px;
+}
+.headerS .fr .tui{
+    display:block;
+    width: 101px;
+    height: 21px;
+    background:url('../img/reg-self.png') no-repeat 0 -284px;
+}
+.headerS .fr .bao{
+    display:block;
+    width: 69px;
+    height: 21px;
+    background:url('../img/reg-self.png') no-repeat 0 -88px;
+}
+
+
+/*中间样式*/
+.contentS{
+    background-color: #F9F9F9;
+}
+.contentS .container{
+    padding:50px 0;
+}
+/*注册图片*/
+.contentS .pic{
+    float: left;
+    width: 280px;
+    margin:50px 180px 0px 100px;   
+}
+/*登录图片*/
+.contentS .pic1{
+    float: left;
+    width: 280px;
+    margin:50px 180px 0px 50px;   
+}
+/*注册form的样式*/
+.contentS form{
+    float: right;
+    padding:12px 25px 32px 20px;
+    width: 382px;
+    border:1px solid #ccc;
+    box-shadow:1px 1px 1px #ccc,-1px -1px 1px #ccc;
+    background-color: #fff;
+}
+.contentS .signin{
+    height: 380px;
+}
+/*登录form的样式*/
+.contentS .register{
+    height: 360px;
+}
+
+.contentS form h4{
+    font-size: 16px;
+    font-weight:bold;
+}
+.contentS form .formItem input{
+    width: 240px;
+    height: 27px;
+    border:1px solid #ccc;
+    background-color: #F7F7F7;
+}
+.contentS form .formItem{
+    margin-top:10px;
+}
+.contentS form .formItem div{
+    font-size: 12px;
+    color:#999999;
+    margin-left:65px;
+    margin-top:5px;
+}
+.contentS form label{
+    display:inline-block;
+    width: 60px;
+    font-size: 12px;
+    text-align:justify;
+}
+.contentS form .yzm input{
+    width: 67px;
+}
+.contentS form .yzm .getYZM{
+    display:inline-block;
+    width: 60px;
+    height: 25px;
+    border:1px solid #000;
+}
+.contentS form .yzm a{
+    font-size:12px;
+    color:#FFAE01;
+    text-decoration:underline;
+}
+.contentS form .check input{
+    margin:12px 10px 14px 65px;
+}
+.contentS form .check{
+    font-size: 12px;
+}
+/*注册按钮样式*/
+.contentS form .last{
+    margin-left:65px;
+    
+}
+.contentS form .last button{
+    font-size: 14px;
+    font-weight:bold;
+}
+.contentS .signin .last a{
+    color:#5C8AC3;
+    font-size: 14px;
+
+}
+.contentS form .last button{
+    width: 125px;
+    height: 30px;
+    background-color: #FF780B;
+    color:#fff;
+    border-radius:5px;
+}
+/*登录按钮样式*/
+.contentS .register .last{
+    padding-top:16px;
+    
+}
+.contentS .register  a{
+    color:#FF6600;
+    font-size: 12px;
+    text-decoration:underline;
+}
+.contentS .register .centerR{
+    width: 265px;
+    border-bottom:1px dotted #ccc;
+    margin:16px 0 0 63px;
+    padding-bottom:10px;
+    font-size:12px; 
+}
+.contentS .register .centerR1{
+    width: 265px;
+    margin:10px 0 3px 63px;
+    font-size:12px; 
+}
+.contentS  form .pic2{
+    margin-left:65px;
+
+}
+.contentS  form .pic2 i{
+    float: left;
+}
+.contentS  form .pic2 i:hover{
+    cursor:pointer;
+}
+.contentS  form .pic2 .tao{
+    display:block;
+    width: 90px;
+    height: 25px;
+    background:url('../img/reg-self.png') no-repeat 0 -246px;
+}
+
+.contentS  form .pic2 .xin{
+    display:block;
+    width: 87px;
+    height: 25px;
+    background:url('../img/reg-self.png') no-repeat 0 -346px;
+}
+
+.contentS  form .pic2 .kai{
+    display:block;
+    width: 81px;
+    height: 25px;
+    background:url('../img/reg-self.png') no-repeat 0 -114px;
+}
+
+.contentS  form .pic2 .qq{
+    display:block;
+    width: 89px;
+    height: 24px;
+    background:url('../img/reg-self.png') no-repeat 0 -148px;
+}
+
+.contentS  form .pic2 .wang{
+    display:block;
+     width: 89px;
+    height: 24px;
+    background:url('../img/reg-self.png') no-repeat 0 -314px;
+}
+
+.contentS  form .pic2 .ren{
+    display:block;
+    width: 82px;
+    height: 24px;
+    background:url('../img/reg-self.png') no-repeat 0 -179px;
+}
+
+.contentS  form .pic2 .xun{
+    display:block;
+    width: 89px;
+    height: 24px;
+    background:url('../img/reg-self.png') no-repeat 0 -384px;
+}
+.contentS  form .pic2 .shou{
+    display:block;
+    width: 88px;
+    height: 24px;
+    background:url('../img/reg-self.png') no-repeat 0 -211px;
+}
+
+
+
+
+
+
+/*尾部样式*/
+.footerS{
+    padding-top:20px;
+    font-size: 12px;
+    color:#666666;
+    text-align:center;
+}
+.footerS ul{
+    display:inline-block;
+    margin:6px auto;
+    text-align:center;
+}
+.footerS ul li{
+    float: left;
+
+      
+}
+.footerS ul li a{
+    padding:0 5px;
+    color:#666666;
+    border-right:1px solid #ccc; 
+}
+.footerS ul li a:hover{
+    color:red;
+    text-decoration:underline;
+}
+
+
+
+
+/*js中需要实现的样式*/
+.getColor{
+    color:red;
+}

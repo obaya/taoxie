@@ -2,25 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>首页</title>
-    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <title>登录-验证用户名和密码是否正确</title>
+    <!-- 利用php+mySQL -->
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/signin.css" />
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-3.2.1.js"></script> 
+    <script src="../js/signin.js"></script>
 </head>
-<body>
-    <div class="box">
-        <h4>电影</h4>
-        <ul>
-            <li>腻害1</li>
-            <li>腻害2</li>
-            <li>腻害3</li>
-            <li>腻害4</li>
-            <li>腻害5</li>
-            <li>腻害6</li>
-            <li>腻害7</li>
-            <li>腻害8</li>
-            <li>腻害9</li>
-            <li>腻害10</li>
-        </ul>
+<body>  
+    <div class="all">
+        <div class="headerS">
+            <div class="container">
+                <h4><a href="../index.html"></a></h4>
+                <div class="fr">
+                    <i class="tel"></i>
+                    <ul class="clearfix">
+                        <li class="zheng"></li>
+                        <li class="tui"></li>
+                        <li class="bao"></li>
+                    </ul>              
+                </div>           
+            </div>       
+        </div>
+        <div class="contentS">
+            <div class="container clearfix">
+                <div class="pic1 fl">
+                    <img src="../img/reg_big.png" />
+                </div>
 
-    </div>
+                <form class="register">
+                    <h4>登录</h4>
+                    <img src="../img/sig_line.png" />
+                    <div class="username formItem">
+                        <label for="username">登录名：</label>
+                        <input type="text" id="username"/>                         
+                    </div>
+                    <div class="password formItem">
+                        <label for="password">密码：</label>
+                        <input type="password" id="password"/>                   
+                    </div>
+                    <div class="last">
+                        <button>登 录</button>
+                        <a href="#">忘记密码？</a>
+                    </div>
+                    <div class="centerR">
+                        <span>没有淘鞋账号？</span>
+                        <a href="#">立即注册</a>
+                        <a href="#">淘鞋招行联名用户注册</a>
+                    </div>
+                    <div class="centerR1">
+                        <p>使用合作网站账号登录：</p>
+                        
+                    </div>
+                    <div class="pic2">
+                        <i class="tao"></i>
+                        <i class="xin"></i>
+                        <i class="kai"></i>
+                        <i class="qq"></i>
+                        <i class="wang"></i>
+                        <i class="ren"></i>
+                        <i class="xun"></i>
+                        <i class="shou"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footerS">
+            <div class="container">
+                <p>淘鞋(厦门)网络科技有限公司 版权所有 闽ICP备08104411号 Copyright© 2008-2012 Taoxie.com, All Rights Reserved</p>
+                <ul class="clearfix">
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">本站动态</a></li>
+                    <li><a href="#">人才招聘</a></li>
+                    <li><a href="#">品牌合作</a></li>
+                    <li><a href="#">淘鞋资讯</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">全部分类</a></li>
+                    <li><a href="#">网站地图</a></li>
+                    <li><a href="#" style="border-right:none;">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>
