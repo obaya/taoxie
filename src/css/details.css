@@ -17,6 +17,10 @@
   color: black;
 }
 
+.main_get .container .get_bottom {
+  font-size: 12px;
+}
+
 .main_get .container .get_bottom .g_b_left {
   margin-right: 40px;
   width: 559px;
@@ -31,7 +35,7 @@
 .main_get .container .get_bottom .g_b_left .bigger {
   width: 558px;
   height: 558px;
-  overflow: hidden;
+  position: relative;
   border-bottom: 1px solid #ccc;
 }
 
@@ -43,8 +47,23 @@
   width: 557px;
 }
 
+.main_get .container .get_bottom .g_b_left .smaller {
+  padding: 10px 0;
+}
+
 .main_get .container .get_bottom .g_b_left .smaller li {
-  padding: 14px;
+  width: 58px;
+  height: 62px;
+  margin: 0 4px;
+  padding: 6px 2px 2px;
+}
+
+.main_get .container .get_bottom .g_b_left .smaller li:hover {
+  cursor: pointer;
+}
+
+.main_get .container .get_bottom .g_b_left .smaller .gaoliang {
+  background: url("../img/d_active.gif") no-repeat;
 }
 
 .main_get .container .get_bottom .g_b_left .addTo {
@@ -130,11 +149,118 @@
   border: 1px solid #ccc;
   width: 26px;
   height: 26px;
+  padding: 4px;
 }
 
 .main_get .container .get_bottom .g_b_right .chooseI .size dd a {
   color: #333;
   font-size: 13px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .qty {
+  height: 45px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .qty a {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: simsun;
   text-align: center;
-  line-height: 26px;
+  line-height: 13px;
+  outline: none;
+  vertical-align: middle;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .qty input {
+  width: 50px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  height: auto;
+  vertical-align: middle;
+  line-height: 16px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .decide {
+  height: 78px;
+  padding-top: 20px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .decide a {
+  display: inline-block;
+  width: 156px;
+  height: 37px;
+  text-indent: -1000px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .decide .buy {
+  background: url("../img/d_mai.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .decide .addcart {
+  background: url("../img/d_che.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode {
+  height: 30px;
+  margin: 5px 0;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode a {
+  padding-left: 18px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  display: inline-block;
+  margin-left: 2px;
+  color: #333;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode .alipay {
+  background: url("../img/d_zhi.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode .tenpay {
+  background: url("../img/d_cai.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode .ebank {
+  background: url("../img/d_wang.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode .creditcard {
+  background: url("../img/d_xin.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode .cashcard {
+  background: url("../img/d_cu.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .pay-mode .cod {
+  background: url("../img/d_huo.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .d-promise {
+  width: 599px;
+  height: 48px;
+  border: 1px solid #EBEBEB;
+  background-color: #F7F7F7;
+}
+
+.main_get .container .get_bottom .g_b_right .d-promise dt {
+  float: left;
+  background-color: #EBEBEB;
+  color: #AFAFAF;
+  width: 44px;
+  height: 100%;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.main_get .container .get_bottom .g_b_right .d-promise dd ul li {
+  float: left;
+  margin: 5px 10px;
 }

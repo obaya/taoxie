@@ -28,6 +28,7 @@
             color:black;
         }
         .get_bottom{
+            font-size: 12px;
             .g_b_left{
                 margin-right:40px;
                 width: 559px;
@@ -42,7 +43,8 @@
                 .bigger{
                     width: 558px;
                     height: 558px;
-                    overflow:hidden;
+                    position:relative;
+                    
                     border-bottom:1px solid #ccc;
                     li{
                         width: 557px;
@@ -53,8 +55,19 @@
                     }
                 }
                 .smaller{
+                    padding:10px 0;
                     li{
-                        padding:14px;
+                        width: 58px;
+                        height: 62px;
+                        margin: 0 4px;
+                        padding: 6px 2px 2px;        
+                    }
+                    li:hover{
+                        cursor:pointer;
+                    }
+                    // 点击谁时谁出现高亮
+                    .gaoliang{
+                        background: url('../img/d_active.gif') no-repeat;
                     }
                 }
             
@@ -79,6 +92,7 @@
                     color: #666;
                 }
                 .info{
+
                     div{
                         margin:5px 0;
                     }
@@ -134,15 +148,110 @@
                             border:1px solid #ccc;
                             width: 26px;
                             height: 26px;
+                            padding:4px;
                             a{
                                 color:#333;
                                 font-size:13px;
-                                text-align:center;
-                                line-height: 26px;
+                            }
+                        }
+                    }
+                    .qty{
+                        height: 45px;
+                        a{
+                            display: inline-block;
+                            width: 13px;
+                            height: 13px;
+                            background: #fff;
+                            border: 1px solid #ddd;
+                            font-family: simsun;
+                            text-align: center;
+                            line-height: 13px;
+                            outline: none;
+                            vertical-align: middle;
+                        }
+                        input{
+                            width: 50px;
+                            border:1px solid #ccc;
+                            font-size: 14px;
+                            height: auto;
+                            vertical-align: middle;
+                            line-height: 16px;
+                        }
+                    }
+                    .decide{
+                        height: 78px;
+                        padding-top:20px;
+                        a{
+                            display: inline-block;
+                            width: 156px;
+                            height: 37px;
+                            text-indent:-1000px;
+                        }
+                        .buy{
+                            background: url('../img/d_mai.gif') no-repeat;
+                        }
+                        .addcart{
+                            background: url('../img/d_che.gif') no-repeat;
+                        }
+                    }
+                }
+                .pay-mode{
+                    height: 30px;
+                    margin:5px 0;
+                    a{
+                        padding-left: 18px;
+                        background-repeat: no-repeat;
+                        background-position: 0 center;
+                        display: inline-block;
+                        margin-left: 2px;
+                        color:#333;
+                       
+                    }
+                    .alipay{
+                        background: url('../img/d_zhi.gif') no-repeat;
+                    }
+                    .tenpay{
+                        background: url('../img/d_cai.gif') no-repeat;
+                    }
+                    .ebank{
+                        background: url('../img/d_wang.gif') no-repeat;
+                    }
+                    .creditcard{
+                        background: url('../img/d_xin.gif') no-repeat;
+                    }
+                    .cashcard{
+                        background: url('../img/d_cu.gif') no-repeat;
+                    }
+                    .cod{
+                        background: url('../img/d_huo.gif') no-repeat;
+                    }
+                }
+                .d-promise{
+                    width: 599px;
+                    height: 48px;
+                    border:1px solid #EBEBEB;
+                    background-color: #F7F7F7;
+                    dt{
+                        float: left;
+                        background-color: #EBEBEB;
+                        color:#AFAFAF;
+                        width: 44px;
+                        height: 100%;
+                        margin-right:10px;
+                        text-align:center;
+                        padding-top:5px;
+                        font-weight:bold;
+                    }
+                    dd{
+                        ul{
+                            li{
+                                float: left;
+                                margin:5px 10px;
                             }
                         }
                     }
                 }
+                
             }
         }
     }

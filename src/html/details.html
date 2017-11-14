@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/gonggong.css" />
     <link rel="stylesheet" href="../css/details.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/jquery.gdsZoom/jquery.gdsZoom.css" />
 
     <script src="../js/common.js"></script>
     <script src="../js/jquery-3.2.1.js"></script> 
+    <script src="../lib/jquery.gdsZoom/jquery.gdsZoom.js"></script> 
 
     <script src="../js/details.js"></script>
     <script src="../js/gonggong.js"></script>
@@ -28,18 +30,25 @@
                 <div class="get_bottom">
                     <div class="g_b_left fl">
                         <ul class="bigger">
-                            <li><img src="../img/details1.jpg"  /></li>
-                            <li><img src="../img/details2.jpg"  /></li>
-                            <li><img src="../img/details3.jpg" /></li>
-                            <li><img src="../img/details4.jpg" /></li>
-                            <li><img src="../img/details5.jpg" /></li>
+                            <li><img src="../img/details1.jpg"   data-big="../img/details1_bigger.png"></li>
+                            <li><img src="../img/details2.jpg"   data-big="../img/details2_bigger.png" /></li>
+                            <li><img src="../img/details3.jpg" data-big="../img/details3_bigger.png"/></li>
+                            <li><img src="../img/details4.jpg" data-big="../img/details4_bigger.png"/></li>
+                            <li><img src="../img/details5.jpg" data-big="../img/details5_bigger.png"/></li>
                         </ul>
+
+    <!-- <div class="bigPic">
+        <img src="img/car_min.png" data-big="img/car.jpg">
+    </div> -->
+
+
+
                         <ul class="smaller clearfix">
-                            <li><a href=""><img src="../img/details1s.jpg" /></a></li>
-                            <li><a href=""><img src="../img/details2s.jpg" /></a></li>
-                            <li><a href=""><img src="../img/details3s.jpg" /></a></li>
-                            <li><a href=""><img src="../img/details4s.jpg" /></a></li>
-                            <li><a href=""><img src="../img/details5s.jpg" /></a></li>
+                            <li><img src="../img/details1s.jpg" /></li>
+                            <li><img src="../img/details2s.jpg" /></li>
+                            <li><img src="../img/details3s.jpg" /></li>
+                            <li><img src="../img/details4s.jpg" /></li>
+                            <li><img src="../img/details5s.jpg" /></li>
                         </ul>
                         <div class="addTo fr"><a href="">加入收藏</a></div>
                     </div>
@@ -82,7 +91,7 @@
                                 <dd> <a href="#">29</a></dd>
                                 <dd> <a href="#">30</a></dd>
                             </dl>
-                            <dl>
+                            <dl class="qty">
                                 <dt>购买数量：</dt>
                                 <dd> 
                                     <a  class="decrease">-</a>
@@ -91,42 +100,50 @@
                                 </dd>
 
                             </dl>
-                            <div class="clearfix">
-                                <a class="buy">立即购买</a> 
-                                <a  class="addcart">加入购物车</a>
+                            <div class="decide">
+                                <a href="#" class="buy">立即购买</a> 
+                                <a href="#" class="addcart">加入购物车</a>
                             </div>
                         </div>
-
+                    
+                        <div class="pay-mode">支付方式：
+                            <a href="" class="alipay" title="支付宝">支付宝</a> 
+                            <a href="" class="tenpay" title="财付通">财付通</a> 
+                            <a href="" class="ebank" title="网银支付">网银支付</a> 
+                            <a href="" class="creditcard" title="信用卡快捷">信用卡快捷</a> 
+                            <a href="" class="cashcard" title="储蓄卡快捷">储蓄卡快捷</a> 
+                            <a href="" class="cod" title="支持货到付款">支持货到付款</a>
+                        </div>
+                        <dl class="d-promise">
+                            <dt>服务<br>承诺</dt>
+                            <dd>
+                              <ul>
+                                
+                                <li>退换货服务<br>
+                                  <img src="../img/details_qi.gif" alt="七天退换货"/></li>
+                                <li>商品保证<br>
+                                  <img src="../img/details_jia.gif" alt="假一罚十"/></li>
+                                <li>承担运费<br>
+                                  <img src="../img/details_bao.gif" alt="全场包邮"/></li>
+                              </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+                   
 
 
 
             
         
           
-        <!-- </div>
-      </div>
-      <div class="d-pay-mode">支付方式：<a href="javascript:void(0);" class="alipay" title="支付宝">支付宝</a> <a href="javascript:void(0);" class="tenpay" title="财付通">财付通</a> <a href="javascript:void(0);" class="ebank" title="网银支付">网银支付</a> <a href="javascript:void(0);" class="creditcard" title="信用卡快捷">信用卡快捷</a> <a href="javascript:void(0);" class="cashcard" title="储蓄卡快捷">储蓄卡快捷</a> <a href="javascript:void(0);" class="cod" title="支持货到付款">支持货到付款</a></div>
-      <dl class="d-promise">
-        <dt>服务<br>
-          承诺</dt>
-        <dd>
-          <ul>
-            
-            <li>退换货服务<br>
-              <img src="http://img.taoxie.com/wp/2013/detail/promise2.gif" alt="七天退换货"/></li>
-            <li>商品保证<br>
-              <img src="http://img.taoxie.com/wp/2013/detail/promise3.gif" alt="假一罚十"/></li>
-            <li>承担运费<br>
-              <img src="http://img.taoxie.com/wp/2013/detail/promise4.gif" alt="全场包邮"/></li>
-          </ul>
-        </dd>
-      </dl>
-    </div>
+        
+      
+     
 
-                    </div>
-                </div>  
-            </div>
-        </div> -->
+            
         <div class="also_like"></div>
         <div class="main_show"></div>
         <!-- 中间先给撑开 -->
