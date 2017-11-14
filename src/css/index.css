@@ -1,0 +1,471 @@
+@charset "UTF-8";
+.taoxie {
+  min-width: 1200px;
+}
+
+.container {
+  width: 1200px;
+}
+
+/*----------banner轮播图样式-------------*/
+.banner {
+  height: 430px;
+  background-color: #F1F1F1;
+}
+
+.banner .container {
+  position: relative;
+}
+
+.banner .container .carousel {
+  width: 780px;
+  height: 430px;
+  position: absolute;
+  left: 220px;
+  overflow: hidden;
+}
+
+.banner .container .carousel ul {
+  position: absolute;
+}
+
+.banner .container .carousel li {
+  float: left;
+}
+
+.banner .container .carousel li img {
+  display: block;
+  width: 780px;
+  height: 430px;
+}
+
+.banner .container .right_pic {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+
+/*-----轮播图下面的左右按钮切换-----*/
+.brand {
+  height: 106px;
+}
+
+.brand .container {
+  padding: 10px 0;
+}
+
+.brand .container .allbrands {
+  height: 84px;
+  border: 2px solid #ccc;
+  position: relative;
+}
+
+.brand .container .allbrands .toPrev, .brand .container .allbrands .toNext {
+  position: absolute;
+  top: 18px;
+  width: 26px;
+  height: 47px;
+  text-indent: -999em;
+}
+
+.brand .container .allbrands .toPrev {
+  left: 0;
+  background: url("../img/tab_left.gif") no-repeat;
+}
+
+.brand .container .allbrands .toNext {
+  right: 0;
+  background: url("../img/tab-right.gif") no-repeat;
+}
+
+.tab .container .tab_left {
+  width: 890px;
+  height: 362px;
+  border: 1px solid #ddd;
+}
+
+.tab .container .tab_left .tab_title {
+  height: 39px;
+  border-bottom: 1px solid #ddd;
+  background-color: #F1F1F1;
+}
+
+.tab .container .tab_left .tab_title li {
+  height: 100%;
+  line-height: 39px;
+  float: left;
+  width: 133px;
+  border-right: 1px solid #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tab .container .tab_right {
+  width: 300px;
+  height: 132px;
+  border: 3px solid #ddd;
+  padding: 13px 10px;
+}
+
+.tab .container .tab_right .t_r_t {
+  font-size: 14px;
+}
+
+.tab .container .tab_right .t_r_t h4 {
+  font-weight: bold;
+  float: left;
+}
+
+.tab .container .tab_right .t_r_t a {
+  float: right;
+  color: #666;
+}
+
+.tab .container .tab_right .t_r_t a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.tab .container .tab_right .t_r_b {
+  font-size: 12px;
+  color: #666;
+}
+
+.tab .container .tab_right .t_r_b li {
+  padding-top: 3px;
+}
+
+.tab .container .tab_right .t_r_b li a {
+  color: #666;
+}
+
+.tab .container .tab_right .t_r_b li:hover a {
+  color: red;
+  text-decoration: underline;
+}
+
+.floors .container .floorL {
+  height: 572px;
+  padding-bottom: 25px;
+}
+
+.floors .container .floorL .top {
+  height: 47px;
+  border-bottom: 5px solid #5AD9BC;
+}
+
+.floors .container .floorL .top .top_l {
+  width: 300px;
+  font-size: 26px;
+  line-height: 42px;
+  font-family: 'Microsoft Yahei';
+  color: #5AD9BC;
+}
+
+.floors .container .floorL .top .top_l em {
+  float: left;
+  width: 70px;
+  height: 42px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 42px;
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-style: italic;
+  background-color: #5AD9BC;
+}
+
+.floors .container .floorL .top .top_c {
+  padding: 10px 0;
+  font-family: simsun;
+  line-height: 22px;
+  color: #5AD9BC;
+  font-size: 12px;
+}
+
+.floors .container .floorL .top .top_c a {
+  color: #5AD9BC;
+  font-size: 12px;
+}
+
+.floors .container .floorL .top .top_r {
+  margin-top: 10px;
+  width: 184px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #def7f2;
+  color: #4fb49d;
+}
+
+.floors .container .floorL .top2 {
+  border-color: #F8C1D8;
+}
+
+.floors .container .floorL .top2 .top_l {
+  color: #F8C1D8;
+}
+
+.floors .container .floorL .top2 .top_l em {
+  background-color: #F8C1D8;
+}
+
+.floors .container .floorL .top2 .top_c {
+  color: #F8C1D8;
+}
+
+.floors .container .floorL .top2 .top_c a {
+  color: #F8C1D8;
+}
+
+.floors .container .floorL .top2 .top_r {
+  background-color: #feeff5;
+  color: #d882a6;
+}
+
+.floors .container .floorL .top3 {
+  border-color: #96C8DF;
+}
+
+.floors .container .floorL .top3 .top_l {
+  color: #96C8DF;
+}
+
+.floors .container .floorL .top3 .top_l em {
+  background-color: #96C8DF;
+}
+
+.floors .container .floorL .top3 .top_c {
+  color: #96C8DF;
+}
+
+.floors .container .floorL .top3 .top_c a {
+  color: #96C8DF;
+}
+
+.floors .container .floorL .top3 .top_r {
+  background-color: #dfeef5;
+  color: #76a7be;
+}
+
+.floors .container .floorL .top4 {
+  border-color: #CBC0A0;
+}
+
+.floors .container .floorL .top4 .top_l {
+  color: #CBC0A0;
+}
+
+.floors .container .floorL .top4 .top_l em {
+  background-color: #CBC0A0;
+}
+
+.floors .container .floorL .top4 .top_c {
+  color: #CBC0A0;
+}
+
+.floors .container .floorL .top4 .top_c a {
+  color: #CBC0A0;
+}
+
+.floors .container .floorL .top4 .top_r {
+  background-color: #efece3;
+  color: #ad9f72;
+}
+
+.floors .container .floorL .top5 {
+  border-color: #BADF96;
+}
+
+.floors .container .floorL .top5 .top_l {
+  color: #BADF96;
+}
+
+.floors .container .floorL .top5 .top_l em {
+  background-color: #BADF96;
+}
+
+.floors .container .floorL .top5 .top_c {
+  color: #BADF96;
+}
+
+.floors .container .floorL .top5 .top_c a {
+  color: #BADF96;
+}
+
+.floors .container .floorL .top5 .top_r {
+  background-color: #eaf5df;
+  color: #8daa71;
+}
+
+.floors .container .floorL .bottom .attrs {
+  background-color: #f4f4f4;
+  padding: 0 5px 5px;
+  float: left;
+  width: 177px;
+}
+
+.floors .container .floorL .bottom .attrs .brands {
+  position: relative;
+  margin: -1px 0 0 -1px;
+  height: 400px;
+}
+
+.floors .container .floorL .bottom .attrs .brands li {
+  float: left;
+  margin: 1px 0 0 1px;
+  display: inline;
+  background-color: #fff;
+  width: 83px;
+  height: 56px;
+  text-align: center;
+}
+
+.floors .container .floorL .bottom .attrs .sizes {
+  position: relative;
+  margin: 6px 0 0 -2px;
+}
+
+.floors .container .floorL .bottom .attrs .sizes li {
+  float: left;
+  background-color: #bdbdbd;
+  color: #fff;
+  text-align: center;
+  font-family: 'Microsoft Yahei';
+  font-size: 18px;
+  float: left;
+  margin: 2px 0 0 2px;
+  display: inline;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+}
+
+.floors .container .floorL .bottom .attrs .sizes li a {
+  color: #666;
+}
+
+.floors .container .floorL .bottom .attrs .sizes li:hover a {
+  color: red;
+  text-decoration: underline;
+}
+
+.floors .container .floorL .bottom .attrs .colors {
+  position: relative;
+  margin: 6px 0 0 -2px;
+}
+
+.floors .container .floorL .bottom .attrs .colors li {
+  float: left;
+  margin: 2px 0 0 2px;
+  display: inline;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+}
+
+.floors .container .floorL .bottom .main {
+  width: 840px;
+}
+
+.floors .container .floorL .bottom .main li {
+  float: left;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.floors .container .floorL .bottom .rank {
+  width: 183px;
+}
+
+.floors .container .floorL .bottom .rank li {
+  width: 100%;
+  height: 33px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+.floors .container .floorL .bottom1 .smallP {
+  width: 500px;
+  height: 500px;
+}
+
+.floors .container .floorL .bottom1 .smallP li {
+  width: 166px;
+  height: 166px;
+}
+
+.floors .container .floorL .bottom1 .largeP {
+  width: 340px;
+}
+
+.floors .container .floorL .bottom1 .largeP li {
+  width: 100%;
+  height: 249px;
+}
+
+.floors .container .floorL .bottom2 .main .womanP li {
+  width: 168px;
+  height: 166px;
+}
+
+.floors .container .floorL .bottom3 .main .manP_l {
+  width: 336px;
+}
+
+.floors .container .floorL .bottom3 .main .manP_r {
+  width: 504px;
+}
+
+.floors .container .floorL .bottom3 .main li {
+  width: 168px;
+  height: 166px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_l {
+  width: 168px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_l li {
+  width: 168px;
+  height: 166px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_c {
+  width: 336px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_c li {
+  width: 336px;
+  height: 166px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_r {
+  width: 336px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_r li {
+  width: 166px;
+  height: 166px;
+}
+
+.floors .container .floorL .bottom5 .main .child_l {
+  width: 168px;
+}
+
+.floors .container .floorL .bottom5 .main .child_c {
+  width: 504px;
+}
+
+.floors .container .floorL .bottom5 .main .child_r {
+  width: 168px;
+}
+
+.floors .container .floorL .bottom5 .main li {
+  width: 168px;
+  height: 166px;
+}

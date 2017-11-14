@@ -1,0 +1,300 @@
+.blackBar ul li:hover span {
+  display: none;
+}
+
+.headerGG .bottom_h .b_h_left .listA {
+  display: none;
+}
+
+.headerGG .bottom_h .b_h_left:hover .listA {
+  display: block;
+}
+
+.pic_3 {
+  height: 178px;
+  padding: 10px 0;
+  display: flex;
+}
+
+.pic_3 li {
+  flex: 1;
+  float: left;
+}
+
+.chooseItems {
+  border: 1px solid #FEE7E7;
+}
+
+.chooseItems .cho_top {
+  height: 38px;
+  border-bottom: 1px solid #FEE7E7;
+  background-color: #FFF7F7;
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.chooseItems .cho_top .jiantou {
+  width: 8px;
+  height: 32px;
+  margin: 0 10px;
+  background: url("../img/goodslist.gif") no-repeat;
+}
+
+.chooseItems .cho_top li {
+  float: left;
+  height: 38px;
+  display: inline-block;
+  line-height: 38px;
+}
+
+.chooseItems .cho_bottom {
+  position: relative;
+}
+
+.chooseItems .cho_bottom dl {
+  height: 33px;
+  border-bottom: 1px dashed #FEE7E7;
+  line-height: 32px;
+  font-size: 12px;
+}
+
+.chooseItems .cho_bottom dl dt {
+  float: left;
+  background-color: #F7F7F7;
+  text-align: center;
+  padding-left: 30px;
+  border-bottom: 1px dashed #FEE7E7;
+}
+
+.chooseItems .cho_bottom dl dd ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.chooseItems .cho_bottom dl dd ul li a {
+  color: #444;
+}
+
+.chooseItems .cho_bottom dl dd ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.chooseItems .cho_bottom dl dd .color {
+  padding-top: 8px;
+}
+
+.chooseItems .cho_bottom dl dd .color li a {
+  width: 18px;
+  height: 18px;
+  text-indent: -99em;
+  overflow: hidden;
+  border: 1px solid #eee;
+  display: block;
+}
+
+.chooseItems .cho_bottom .toggle {
+  width: 115px;
+  height: 26px;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  margin-left: -57px;
+  background: url("../img/toggle.gif") no-repeat;
+}
+
+.chooseItems .cho_bottom .toggle em {
+  display: block;
+  cursor: pointer;
+  width: 100px;
+  padding-left: 15px;
+  height: 26px;
+  line-height: 24px;
+  text-align: center;
+  font-family: 'Microsoft Yahei';
+  font-size: 14px;
+  color: #d1271a;
+  background: url("../img/toggle_xia.gif") 30px 10px no-repeat;
+}
+
+.chooseItems .cho_bottom .open em {
+  background: url("../img/toggle_shang.gif") 30px 10px no-repeat;
+}
+
+.allItems {
+  margin-top: 35px;
+}
+
+.allItems .all_top {
+  border: 1px solid #FEE7E7;
+  background-color: #FFF7F7;
+  height: 34px;
+  padding: 6px 6px 6px 0;
+}
+
+.allItems .all_top .a_t_left {
+  width: 340px;
+  display: inline;
+}
+
+.allItems .all_top .a_t_left li {
+  height: 20px;
+  float: left;
+  border-right: 1px solid #dfdfdf;
+}
+
+.allItems .all_top .a_t_left li a {
+  float: left;
+  width: 83px;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  margin: 0 -1px;
+  text-align: center;
+  font-size: 14px;
+  color: #F53938;
+}
+
+.allItems .all_top .a_t_left li a.selected {
+  height: 45px;
+  line-height: 40px;
+  background: url("../img/all_jian.gif") no-repeat;
+  top: -10px;
+  color: #fff;
+}
+
+.allItems .all_top .a_t_center {
+  width: 200px;
+  margin-left: 10px;
+}
+
+.allItems .all_top .a_t_center a {
+  margin-left: 8px;
+  line-height: 20px;
+  color: #333;
+  font-size: 12px;
+  background-image: url("../img/all_xhuang.gif");
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 10px;
+}
+
+.allItems .all_top .a_t_center .price {
+  background-image: url("../img/quanhei.gif");
+}
+
+.allItems .all_top .a_t_center .sales {
+  background-image: url("../img/all_shei.gif");
+}
+
+.allItems .all_top .a_t_right .current {
+  font-family: Tahoma, Geneva, sans-serifs;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.allItems .all_top .a_t_right .prev {
+  height: 18px;
+  border: 1px solid #d7d7d7;
+  line-height: 18px;
+  background: url(http://img.taoxie.com/pager/pager_prev_ar.gif) no-repeat;
+  background-position: 6px -26px;
+  overflow: hidden;
+  text-indent: -99999em;
+  width: 10px;
+}
+
+.allItems .all_bottom {
+  margin-top: 19px;
+}
+
+.allItems .all_bottom ul {
+  min-height: 1000px;
+}
+
+.allItems .all_bottom ul li {
+  width: 234px;
+  height: 308px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 45px;
+}
+
+.allItems .all_bottom ul li:nth-child(5n) {
+  margin-right: 0px;
+}
+
+.saleItems {
+  height: 360px;
+  padding: 13px 12px 17px;
+  border: 1px solid #ccc;
+  background: url("../img/temai_bg.gif");
+}
+
+.saleItems h3 {
+  border-bottom: 1px dashed black;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.saleItems .sale_left {
+  width: 750px;
+  margin-right: 10px;
+}
+
+.saleItems .sale_left ul {
+  height: 289px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 8px 0;
+}
+
+.saleItems .sale_left ul li {
+  float: left;
+  width: 184px;
+  height: 272px;
+  border: 1px solid #ccc;
+  margin: 1px;
+}
+
+.saleItems .sale_right {
+  width: 411px;
+}
+
+.saleItems .sale_right ul li {
+  float: left;
+  width: 200px;
+  height: 289px;
+  border: 1px solid #ccc;
+}
+
+.saleItems .sale_right ul li:first-child {
+  margin-right: 10px;
+}
+
+.search {
+  height: 98px;
+  padding: 20px 0 0 316px;
+}
+
+.search .fl .shang {
+  width: 562px;
+  height: 40px;
+  border: 3px solid #CD2A2D;
+  background: url("../img/index_fdj.png") no-repeat;
+  background-position: 8px center;
+  padding-left: 30px;
+  line-height: 40px;
+}
+
+.search .fl .shang input {
+  width: 461px;
+  margin-top: -26px;
+}
+
+.search .fl .shang img:last-child {
+  display: inline-block;
+  margin-right: -2px;
+}

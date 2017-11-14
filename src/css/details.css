@@ -1,0 +1,140 @@
+.blackBar ul li:hover span {
+  display: none;
+}
+
+.headerGG .bottom_h .b_h_left .listA {
+  display: none;
+}
+
+.headerGG .bottom_h .b_h_left:hover .listA {
+  display: block;
+}
+
+.main_get .container .get_top {
+  font-size: 12px;
+  height: 38px;
+  padding: 12px 0 0 15px;
+  color: black;
+}
+
+.main_get .container .get_bottom .g_b_left {
+  margin-right: 40px;
+  width: 559px;
+  height: 642px;
+  border: 1px solid #ccc;
+}
+
+.main_get .container .get_bottom .g_b_left ul li {
+  float: left;
+}
+
+.main_get .container .get_bottom .g_b_left .bigger {
+  width: 558px;
+  height: 558px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.main_get .container .get_bottom .g_b_left .bigger li {
+  width: 557px;
+}
+
+.main_get .container .get_bottom .g_b_left .bigger li img {
+  width: 557px;
+}
+
+.main_get .container .get_bottom .g_b_left .smaller li {
+  padding: 14px;
+}
+
+.main_get .container .get_bottom .g_b_left .addTo {
+  padding: 3px 0 30px 20px;
+  font-size: 12px;
+  background: url("../img/d_jia.gif") no-repeat left 3px;
+}
+
+.main_get .container .get_bottom .g_b_left .addTo a {
+  color: black;
+}
+
+.main_get .container .get_bottom .g_b_left .addTo a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.main_get .container .get_bottom .g_b_right h1 {
+  width: 540px;
+  font: bold 14px/26px simsun;
+  color: #666;
+}
+
+.main_get .container .get_bottom .g_b_right .info {
+  font-size: 13px;
+}
+
+.main_get .container .get_bottom .g_b_right .info div {
+  margin: 5px 0;
+}
+
+.main_get .container .get_bottom .g_b_right .info .realP {
+  font-size: 32px;
+  line-height: 26px;
+  color: #ff5500;
+  font-family: tahoma;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.main_get .container .get_bottom .g_b_right .info .marketP em {
+  font-weight: bold;
+  color: #3355aa;
+  font-family: tahoma;
+}
+
+.main_get .container .get_bottom .g_b_right .info .pjia .star {
+  display: inline-block;
+  width: 63px;
+  height: 11px;
+  background: url("../img/star.gif") no-repeat;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI {
+  border: 1px solid #ffe6d2;
+  background: #fefcf2;
+  padding: 15px;
+  position: relative;
+  font-family: simsun;
+  margin-top: 15px;
+  color: #555555;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI dt, .main_get .container .get_bottom .g_b_right .chooseI dd {
+  float: left;
+  margin-right: 5px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .color {
+  height: 65px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .color dd {
+  border: 1px solid #ccc;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .size {
+  height: 55px;
+  padding: 14px 0;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .size dd {
+  border: 1px solid #ccc;
+  width: 26px;
+  height: 26px;
+}
+
+.main_get .container .get_bottom .g_b_right .chooseI .size dd a {
+  color: #333;
+  font-size: 13px;
+  text-align: center;
+  line-height: 26px;
+}

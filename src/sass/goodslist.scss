@@ -1,0 +1,308 @@
+// 修改公共部分的小差异
+
+// 竖条hover li时 span不会出现
+.blackBar ul li:hover span{
+    display:none;  
+}
+
+// 二级导航先隐藏，hover时才出现
+.headerGG .bottom_h{
+    .b_h_left{
+        .listA{
+            display:none;
+        }
+    }
+    .b_h_left:hover .listA{
+        display:block;
+    }  
+        
+}
+
+// 除掉公共部分之和中间的部分
+// 中间部分的三张图片
+.pic_3{
+    height: 178px;
+    padding:10px 0;
+    display:flex;
+    li{
+        flex:1;
+        float: left;
+    }
+}
+
+
+// <!-- 筛选部分 -->
+.chooseItems{
+    // height: 248px;
+    border:1px solid #FEE7E7;
+    .cho_top{
+        height: 38px;
+        border-bottom:1px solid #FEE7E7;
+        background-color: #FFF7F7;
+        padding-left: 10px;
+        font-size: 12px;
+        .jiantou{
+            width: 8px;
+            height: 32px;
+            margin:0 10px;
+            background: url('../img/goodslist.gif') no-repeat;
+        }
+        li{
+            float: left;
+            height: 38px;
+            display:inline-block;
+            line-height: 38px;
+            
+        }
+        
+        
+    }
+    
+    .cho_bottom{
+        position:relative;
+        dl{
+            height: 33px;
+            border-bottom:1px dashed #FEE7E7;
+            line-height: 32px;
+            font-size:12px;
+            dt{
+                // height: 34px;
+                float: left;
+                // padding-left:3px;
+                background-color: #F7F7F7;
+                text-align:center;
+                padding-left:30px;
+                border-bottom:1px dashed #FEE7E7;
+            }
+            dd{
+
+                ul{
+                    // height: 34px;
+
+                    li{
+                        float: left;
+                        margin:0 10px;
+                        a{
+                            color:#444;
+                        }
+                        a:hover{
+                            color:red;
+                            text-decoration:underline;
+                        }
+                    }
+                }
+                .color{
+                    padding-top:8px;
+                    li{              
+                        a{
+                            width: 18px;
+                            height: 18px;
+                            text-indent: -99em;
+                            overflow: hidden;
+                            border: 1px solid #eee;
+                            display: block;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .toggle{
+            width: 115px;
+            height: 26px;
+            position: absolute;
+            left: 50%;
+            bottom: -25px;
+            margin-left: -57px;
+            background: url("../img/toggle.gif") no-repeat;
+            em{
+                display: block;
+                cursor: pointer;
+                width: 100px;
+                padding-left: 15px;
+                height: 26px;
+                line-height: 24px;
+                text-align: center;
+                font-family: 'Microsoft Yahei';
+                font-size: 14px;
+                color: #d1271a;
+                background: url("../img/toggle_xia.gif") 30px 10px no-repeat;
+            }
+            
+        }
+        .open em{
+            background: url("../img/toggle_shang.gif") 30px 10px no-repeat;
+        }
+
+    }
+}
+
+
+// <!-- 所有商品list -->
+.allItems{
+    margin-top:35px;
+    .all_top{
+        border: 1px solid #FEE7E7;
+        background-color: #FFF7F7;
+        height: 34px;
+        padding: 6px 6px 6px 0; 
+        .a_t_left{
+            width: 340px;
+            display: inline;
+            li{
+                height: 20px;
+                float: left;
+                border-right: 1px solid #dfdfdf;
+                a{
+                    float: left;
+                    width: 83px;
+                    height: 20px;
+                    line-height: 20px;
+                    position: relative;
+                    margin: 0 -1px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #F53938;
+                }
+                a.selected {
+                    height: 45px;
+                    line-height: 40px;
+                    background: url("../img/all_jian.gif") no-repeat;
+                    top:-10px;
+                    color:#fff;
+                }
+            }
+        }
+        .a_t_center{
+            width: 200px;
+            margin-left: 10px;
+            a{
+                margin-left: 8px;
+                line-height: 20px;
+                color:#333;
+                font-size:12px;
+                background-image: url("../img/all_xhuang.gif");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 10px;
+            }
+            .price{
+                background-image: url("../img/quanhei.gif");
+            }
+            .sales{
+                background-image: url("../img/all_shei.gif");
+            }
+        }
+        .a_t_right{
+            .current{
+                font-family: Tahoma, Geneva, sans-serifs;
+                font-size: 12px;
+                line-height: 20px;
+                white-space: nowrap;
+            }
+            .prev{
+                    height: 18px;
+                    border: 1px solid #d7d7d7;
+                    line-height: 18px;
+                    background: url(http://img.taoxie.com/pager/pager_prev_ar.gif) no-repeat;
+                    background-position: 6px -26px;
+                    overflow: hidden;
+                    text-indent: -99999em;
+                    width: 10px;
+            }
+        }
+    }
+    .all_bottom{
+        margin-top:19px;
+        
+        ul{
+            min-height:1000px;
+            li{
+                width: 234px;
+                height: 308px;
+                border:1px solid #ccc;
+                float: left;
+                margin-right:7px;
+                margin-bottom:45px;
+            }
+        }
+        ul li:nth-child(5n){
+            margin-right:0px;
+        }
+    }
+}
+
+
+// <!-- 特卖部分 -->
+.saleItems{
+    height: 360px;
+    padding:13px 12px 17px;
+    border:1px solid #ccc;
+    background: url('../img/temai_bg.gif');
+    h3{
+        border-bottom:1px dashed black;
+        padding-bottom:3px;
+        margin-bottom:10px;
+    }
+    .sale_left{
+        width: 750px;
+        margin-right:10px;
+        ul{
+            height: 289px;
+            border:1px solid #ccc;
+            background-color: #fff;
+            padding:8px 0;
+            li{
+                float: left;
+                width: 184px;
+                height: 272px;
+                border:1px solid #ccc;
+                margin:1px;
+            }
+        }
+    }
+    .sale_right{
+        width: 411px;
+        ul{
+            li{
+                float: left;
+                width: 200px;
+                height: 289px;
+                border:1px solid #ccc;
+            }
+        }
+        ul li:first-child{
+            margin-right:10px;
+        }
+    }
+}
+
+// <!-- 搜索框 -->
+.search{
+    height: 98px;
+    padding:20px 0 0 316px;
+    .fl{
+        .shang{
+            width: 562px;
+            height: 40px;
+            border:3px solid #CD2A2D;
+            background:url("../img/index_fdj.png") no-repeat;
+            background-position: 8px center;
+            padding-left:30px;
+            line-height: 40px;
+              
+            
+            input{
+                width: 461px;
+                // padding-top:20px;
+                margin-top:-26px;
+            }
+            img:last-child{
+                display:inline-block;
+                margin-right:-2px;
+            }
+        }
+    }
+    
+}
+

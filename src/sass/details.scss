@@ -1,0 +1,149 @@
+// 修改公共部分的小差异
+
+// 竖条hover li时 span不会出现
+.blackBar ul li:hover span{
+    display:none;  
+}
+
+// 二级导航先隐藏，hover时才出现
+.headerGG .bottom_h{
+    .b_h_left{
+        .listA{
+            display:none;
+        }
+    }
+    .b_h_left:hover .listA{
+        display:block;
+    }  
+        
+}
+
+// <!-- 详情说明区 -->
+.main_get{
+    .container{
+        .get_top{
+            font-size: 12px;
+            height: 38px;
+            padding:12px 0 0 15px;
+            color:black;
+        }
+        .get_bottom{
+            .g_b_left{
+                margin-right:40px;
+                width: 559px;
+                height: 642px;
+                border:1px solid #ccc;
+                ul{
+                    li{
+                        float: left;
+                    }
+                    
+                }
+                .bigger{
+                    width: 558px;
+                    height: 558px;
+                    overflow:hidden;
+                    border-bottom:1px solid #ccc;
+                    li{
+                        width: 557px;
+                        
+                        img{
+                            width: 557px;
+                        }
+                    }
+                }
+                .smaller{
+                    li{
+                        padding:14px;
+                    }
+                }
+            
+                .addTo{
+                    padding:3px 0 30px 20px;
+                    font-size: 12px;
+                    background: url('../img/d_jia.gif') no-repeat left 3px;
+                    a{
+                        color:black;
+                    }
+                    a:hover{
+                        color:red;
+                        text-decoration:underline;
+                    }
+
+                }
+            }
+            .g_b_right{
+                h1{
+                    width: 540px;
+                    font: bold 14px/26px simsun;
+                    color: #666;
+                }
+                .info{
+                    div{
+                        margin:5px 0;
+                    }
+                    font-size: 13px;
+                    .realP{
+                        font-size: 32px;
+                        line-height: 26px;
+                        color: #ff5500;
+                        font-family: tahoma;
+                        display: inline-block;
+                        vertical-align: baseline;
+                    }
+                    .marketP{
+                        em{
+                            font-weight: bold;
+                            color: #3355aa;
+                            font-family: tahoma;
+                        }
+                    }
+                    .pjia{
+                        .star{
+                            display: inline-block;
+                            width: 63px;
+                            height: 11px;
+                            background: url('../img/star.gif') no-repeat;
+
+                        }
+                        
+                    }
+                }
+                .chooseI{
+                    border: 1px solid #ffe6d2;
+                    background: #fefcf2;
+                    padding: 15px;
+                    position: relative;
+                    font-family: simsun;
+                    margin-top: 15px;
+                    color: #555555; 
+                    dt,dd{
+                        float: left;
+                        margin-right:5px;
+                    }
+                    .color{
+                        height: 65px;
+                        dd{
+                            border:1px solid #ccc;
+                        }
+                    }
+                    .size{
+                        height: 55px;
+                        padding:14px 0;
+                        dd{
+                            border:1px solid #ccc;
+                            width: 26px;
+                            height: 26px;
+                            a{
+                                color:#333;
+                                font-size:13px;
+                                text-align:center;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
