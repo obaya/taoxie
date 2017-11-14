@@ -83,7 +83,7 @@
 				},
 				move:function(x,y){
 					// 计算放大镜移动过的距离
-					var left = x - $small.offset().left -  this.$minzoom.outerWidth()/2;
+					var left = x - $small.offset().left -  this.$minzoom.outerWidth()/2+window.scrollX;
 					var top = y - $small.offset().top -  this.$minzoom.outerHeight()/2+window.scrollY;
 
 					// 限定left,top值
