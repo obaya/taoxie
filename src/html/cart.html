@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>cart</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/cart.css" />
+</head>
+<body>
+    <div class="cart">
+    <!-- 固定在右边的客服栏 -->
+        <div class="server">
+            <ul>
+                <li class="qq"><a href="">客服</a> </li>
+                <li class="ww"><a href="">客服</a></li>
+                <li class="gotop"><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="container">
+                <ul class="fr">
+                    <li class="reg">
+                        <a href="http://localhost:3333/html/register.html">登录</a> |
+                        <a href="http://localhost:3333/html/signin.html">注册</a>
+                    </li>
+                    <li class="listD">我的淘鞋<i class="icon-arrLeft-fill iconfont"></i>
+                    <ul class="xiala">
+                        <li>我的淘鞋<i class="icon-arrLeft-fill iconfont"></i></li>
+                        <li>我的评价</li>
+                        <li>我的收藏</li>
+                        <li>我的优惠券</li>
+                        <li>收货地址</li>
+                        <li>修改密码</li>
+                    </ul>
+
+                    </li>
+                    <li><a href="">我的订单</a></li>
+                    <li>浏览记录<i class="icon-arrLeft-fill iconfont"></i></li>
+
+                    <li class="listD">帮助中心<i class="icon-arrLeft-fill iconfont"></i>
+                        <ul class="xiala">
+                            <li>帮助中心<i class="icon-arrLeft-fill iconfont"></i></li>
+                            <li>会员服务</li>
+                            <li>如何购物</li>
+                            <li>使用优惠券</li>
+                            <li>发货时间</li>
+                            <li>联系客服</li>
+                        </ul>
+                    </li>
+                    <li class="stao"><i class="icon-shouji iconfont"></i>手机淘鞋</li>
+                </ul>
+            </div>
+        </div>
+        <div class="car_bottom">
+            <div class="container">
+                <div class="logo">
+                    <h1><a href=""></a></h1>
+                    <div class="hotline"></div>
+                </div>
+                <div class="buzou">
+                    <ul>
+                        <li class="selected">1.我的购物车</li>
+                        <li>2.确认订单信息</li>
+                        <li>3.成功提交订单</li>
+                    </ul>
+                </div>
+                <table class="carlist">
+                    <colgroup>
+                        <col width="30" />
+                        <col width="80" />
+                        <col valign="top" />
+                        <col width="100" />
+                        <col width="150" />
+                        <col width="150" />
+                        <col width="100" />
+                        <col width="60" />
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" title="全选" id="checkAll" /></th>
+                            <th>产品图片</th>
+                            <th>商品名称</th>
+                            <th>淘鞋价</th>
+                            <th>优惠</th>
+                            <th>数量</th>
+                            <th>合计</th>
+                            <th>操作</th>
+                        </tr>
+
+                    </thead>
+                    <!-- tbody的商品信息通过cookie获取 -->
+                    <tbody class="cargoods">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                         <tr class="first_f">
+                        
+                            <td colspan="8" style="padding-left:15px;">
+                                <table width="100%">
+                                    <colgroup>
+                                        <col width="80%" />
+                                    </colgroup>
+                                    <tr>
+                                        <td class="tl"><a href="#" id="batchDelete" class="batch-delete">删除选中商品</a></td>
+                                        <td><b id="totalQuantity">0</b> 件商品</td>
+                                        <td>总价：</td>
+                                        <td><span id="amountCash">0.00</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>优惠：</td>
+                                        <td><span id="reduceCash">-</span></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="last_f">
+                            <td colspan="8" class="sum">总计(不含运费)：<em id="totalCash">0.00</em> </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="subItem">
+                    <div class="sub_left fl ">如果你在购物中遇到问题，请<a href="">点击此处</a>反馈</div>
+                    <div class="sub_right fr">
+                        <div class="sub_right1 fl"><a href="">继续购物</a></div>
+                        <div class="sub_right2 fr"><a href=""></a></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

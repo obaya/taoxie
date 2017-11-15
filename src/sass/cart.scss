@@ -1,0 +1,227 @@
+.container{
+    width: 980px;
+}
+.cart{
+    .server{
+        position:fixed;
+        right: 3px;
+        top:40%;
+        .qq a,.ww a{
+            display:block;
+            width: 58px;
+            height: 28px;
+            border:1px solid #ccc;
+            border-radius:3px;
+            margin-bottom:3px;
+            padding-left:16px;
+            font-size:12px;
+            text-align:center;
+            line-height: 28px;
+            
+            z-index:100;
+            a{
+                color:#666;
+            }
+        }
+
+        .qq a{
+            background: url('../img/car_qq.gif') no-repeat 3px center;
+            background-color: #fff;
+        }
+        .ww a{
+            background: url('../img/car_ww.gif') no-repeat 3px center;
+            background-color: #fff;
+        }
+        .gotop a{
+            display:block;
+            width: 57px;
+            height: 54px;
+            background: url('../img/car_gotop.gif') no-repeat;
+        }
+    }
+    .header{
+        height: 27px;
+        background-color: #F6F6F6;
+        border-bottom:1px solid #DADADA;
+        ul{
+            li{
+                float: left;
+                font-size:12px;
+                padding:0 10px;
+                margin:0 5px;
+                line-height: 27px;
+
+            }
+            .reg a,.stao{
+                color:#CE0000;
+                padding:0 3px;
+            }
+            .stao:hover{
+                text-decoration:underline;
+                cursor:pointer;
+            }
+            .listD{
+                position:relative;               
+                .xiala{
+                    display:none;
+                    position:absolute;
+                    left: 0;
+                    top: -1px;
+                    width: 100%;
+                    background-color: #fff;
+                    border:1px solid #ccc;
+                    li{
+                        padding:5px 0 5px 5px;
+                        border-bottom:1px solid #ccc;     
+                        line-height:16px;
+                    }
+                    li:hover{
+                        color:#d00;
+                        cursor:pointer;
+                        font-weight:bold;
+                        text-decoration:underline;
+                    }
+                }
+            }
+              
+            .listD:hover .xiala{              
+                display:block;   
+            } 
+            li:first-child{
+                color:#CE0000;
+            }
+        }
+    }
+    .car_bottom{
+        .container{
+            .logo{
+                height: 52px;
+                border-bottom:1px solid black;
+                padding-top:10px;
+                h1{
+                    float: left;
+                    width: 500px;
+                    height: 42px;
+                    background: url('../img/car_logo.gif') no-repeat;
+                }
+                .hotline{
+                    width: 305px;
+                    height: 42px;
+                    float: right;
+                    background: url('../img/car_phone.gif') no-repeat;
+                }
+            }
+            .buzou{
+                height: 65px;
+                padding-top:10px;
+                ul{
+                    height: 35px;
+                    background: url('../img/car_step.gif') no-repeat;
+                    li{
+                        float: left;
+                        width: 225px;
+                        height: 35px;
+                        text-align:center;
+                        line-height: 35px;
+                        font-weight: bold;
+                        color:#000;
+                        font-size: 15px;
+
+                    }
+                    .selected{
+                        color:#FBF7F7;
+                        background: url('../img/car_selected_hong.png') no-repeat;
+                    }
+                }
+            }
+            .carlist{
+                width: 100%;
+                th,td{
+                    padding: 10px 0;
+                    font-size: 12px;
+                }
+                thead{
+                    border: 1px solid #ddd;
+                    th{
+                        
+                        background: #f3f3f3;
+
+                    }
+                }
+                tbody.cargoods tr{
+                  background: #FDFEEE;
+                    border:1px solid #ddd; 
+                }
+
+                tfoot{
+                    .first_f{
+                        height: 72px;
+                        border:1px solid #ddd; 
+                        .tl{
+
+                            padding-left:16px;
+                            background:url('../img/car_cha.gif') no-repeat left center;
+                        }
+                        #totalQuantity{
+                            color:red;
+                        }
+                    }
+                    
+                
+                    .last_f{
+                   
+                        height: 37px;
+                        border:1px solid #ddd; 
+                        background: #F3F3F3;
+                        .sum{
+                            text-align:right;
+                            padding-right:20px;
+                            #totalCash{
+                                color:red;
+                                font-size:16px;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .subItem{
+                padding-top:16px;
+                font-size: 14px;
+                a:hover{
+                    text-decoration:underline;
+                }
+                .sub_left{
+                    a{
+                        color:#CE0000;
+                    }
+                }
+                .sub_right{
+                    
+                    .sub_right1{
+                        text-align:center;
+                        line-height: 43px;
+                        width: 90px;
+                        height: 43px;
+                        padding-left:18px;
+                        background: url('../img/car_car.gif') no-repeat left center;
+                        a{
+                            color:#333;
+
+                        }
+                        
+                    }
+                    .sub_right2{
+                        a{
+                            display:block;
+                            width: 145px;
+                            height: 43px;
+                            background: url('../img/car_submit.gif') no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

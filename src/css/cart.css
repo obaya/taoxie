@@ -1,0 +1,234 @@
+.container {
+  width: 980px;
+}
+
+.cart .server {
+  position: fixed;
+  right: 3px;
+  top: 40%;
+}
+
+.cart .server .qq a, .cart .server .ww a {
+  display: block;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  padding-left: 16px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 28px;
+  z-index: 100;
+}
+
+.cart .server .qq a a, .cart .server .ww a a {
+  color: #666;
+}
+
+.cart .server .qq a {
+  background: url("../img/car_qq.gif") no-repeat 3px center;
+  background-color: #fff;
+}
+
+.cart .server .ww a {
+  background: url("../img/car_ww.gif") no-repeat 3px center;
+  background-color: #fff;
+}
+
+.cart .server .gotop a {
+  display: block;
+  width: 57px;
+  height: 54px;
+  background: url("../img/car_gotop.gif") no-repeat;
+}
+
+.cart .header {
+  height: 27px;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #DADADA;
+}
+
+.cart .header ul li {
+  float: left;
+  font-size: 12px;
+  padding: 0 10px;
+  margin: 0 5px;
+  line-height: 27px;
+}
+
+.cart .header ul .reg a, .cart .header ul .stao {
+  color: #CE0000;
+  padding: 0 3px;
+}
+
+.cart .header ul .stao:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart .header ul .listD {
+  position: relative;
+}
+
+.cart .header ul .listD .xiala {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.cart .header ul .listD .xiala li {
+  padding: 5px 0 5px 5px;
+  border-bottom: 1px solid #ccc;
+  line-height: 16px;
+}
+
+.cart .header ul .listD .xiala li:hover {
+  color: #d00;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cart .header ul .listD:hover .xiala {
+  display: block;
+}
+
+.cart .header ul li:first-child {
+  color: #CE0000;
+}
+
+.cart .car_bottom .container .logo {
+  height: 52px;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+}
+
+.cart .car_bottom .container .logo h1 {
+  float: left;
+  width: 500px;
+  height: 42px;
+  background: url("../img/car_logo.gif") no-repeat;
+}
+
+.cart .car_bottom .container .logo .hotline {
+  width: 305px;
+  height: 42px;
+  float: right;
+  background: url("../img/car_phone.gif") no-repeat;
+}
+
+.cart .car_bottom .container .buzou {
+  height: 65px;
+  padding-top: 10px;
+}
+
+.cart .car_bottom .container .buzou ul {
+  height: 35px;
+  background: url("../img/car_step.gif") no-repeat;
+}
+
+.cart .car_bottom .container .buzou ul li {
+  float: left;
+  width: 225px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+
+.cart .car_bottom .container .buzou ul .selected {
+  color: #FBF7F7;
+  background: url("../img/car_selected_hong.png") no-repeat;
+}
+
+.cart .car_bottom .container .carlist {
+  width: 100%;
+}
+
+.cart .car_bottom .container .carlist th, .cart .car_bottom .container .carlist td {
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.cart .car_bottom .container .carlist thead {
+  border: 1px solid #ddd;
+}
+
+.cart .car_bottom .container .carlist thead th {
+  background: #f3f3f3;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr {
+  background: #FDFEEE;
+  border: 1px solid #ddd;
+}
+
+.cart .car_bottom .container .carlist tfoot .first_f {
+  height: 72px;
+  border: 1px solid #ddd;
+}
+
+.cart .car_bottom .container .carlist tfoot .first_f .tl {
+  padding-left: 16px;
+  background: url("../img/car_cha.gif") no-repeat left center;
+}
+
+.cart .car_bottom .container .carlist tfoot .first_f #totalQuantity {
+  color: red;
+}
+
+.cart .car_bottom .container .carlist tfoot .last_f {
+  height: 37px;
+  border: 1px solid #ddd;
+  background: #F3F3F3;
+}
+
+.cart .car_bottom .container .carlist tfoot .last_f .sum {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.cart .car_bottom .container .carlist tfoot .last_f .sum #totalCash {
+  color: red;
+  font-size: 16px;
+}
+
+.cart .car_bottom .container .subItem {
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.cart .car_bottom .container .subItem a:hover {
+  text-decoration: underline;
+}
+
+.cart .car_bottom .container .subItem .sub_left a {
+  color: #CE0000;
+}
+
+.cart .car_bottom .container .subItem .sub_right .sub_right1 {
+  text-align: center;
+  line-height: 43px;
+  width: 90px;
+  height: 43px;
+  padding-left: 18px;
+  background: url("../img/car_car.gif") no-repeat left center;
+}
+
+.cart .car_bottom .container .subItem .sub_right .sub_right1 a {
+  color: #333;
+}
+
+.cart .car_bottom .container .subItem .sub_right .sub_right2 a {
+  display: block;
+  width: 145px;
+  height: 43px;
+  background: url("../img/car_submit.gif") no-repeat;
+}
