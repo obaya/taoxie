@@ -78,6 +78,105 @@
   background: url("../img/tab-right.gif") no-repeat;
 }
 
+.brand .container .allbrands .box {
+  width: 1140px;
+  height: 100%;
+  margin: 6px 0;
+  overflow: hidden;
+  position: absolute;
+  left: 26px;
+}
+
+.brand .container .allbrands .box ul.brandsbox {
+  width: 2280px;
+  position: absolute;
+  left: 0;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a {
+  display: inline-block;
+  float: left;
+  width: 71px;
+  height: 69px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a i {
+  display: block;
+  margin: 0 0 5px 8px;
+  width: 56px;
+  height: 42px;
+  background-image: url("../img/brandlist.gif");
+  background-repeat: no-repeat;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .nike {
+  background-position: 0 0;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .adidas {
+  background-position: 0 -44px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .san {
+  background-position: 0 -1232px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .nb {
+  background-position: 0 -1672px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .skq {
+  background-position: 0 -5280px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .kw {
+  background-position: 0 -88px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .dsn {
+  background-position: 0 -1760px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .fk {
+  background-position: 0 -660px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .tb {
+  background-position: 0 -176px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .zsn {
+  background-position: 0 -3432px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .361 {
+  background-position: 0 -220px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .afs {
+  background-position: 0 -5236px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .qwt {
+  background-position: 0 -4312px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .kdm {
+  background-position: 0 -1716px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .dfn {
+  background-position: 0 -1056px;
+}
+
+.brand .container .allbrands .box ul.brandsbox li a .xg {
+  background-position: 0 -3300px;
+}
+
 .tab .container .tab_left {
   width: 890px;
   height: 362px;
@@ -381,12 +480,48 @@
   width: 183px;
 }
 
-.floors .container .floorL .bottom .rank li {
+.floors .container .floorL .bottom .rank .r {
   width: 100%;
-  height: 33px;
+  height: 34px;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ddd;
+}
+
+.floors .container .floorL .bottom .rank .r ul {
+  height: 100%;
+  font-size: 12px;
+}
+
+.floors .container .floorL .bottom .rank .r ul li {
+  float: left;
+}
+
+.floors .container .floorL .bottom .rank .r ul li img {
+  width: 30px;
+}
+
+.floors .container .floorL .bottom .rank .r ul li .name {
+  display: inline-block;
+  width: 70px;
+  color: #ababab;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.floors .container .floorL .bottom .rank .r ul li .yishou, .floors .container .floorL .bottom .rank .r ul li .qty {
+  display: inline-block;
+  padding-top: 8px;
+  padding-right: 5px;
+  color: green;
+}
+
+.floors .container .floorL .bottom .rank .r ul li .qty {
+  color: orange;
+}
+
+.floors .container .floorL .bottom .rank .r ul .shuzi {
+  margin: 5px;
 }
 
 .floors .container .floorL .bottom1 .smallP {
@@ -396,7 +531,7 @@
 
 .floors .container .floorL .bottom1 .smallP li {
   width: 166px;
-  height: 166px;
+  height: 167px;
 }
 
 .floors .container .floorL .bottom1 .largeP {
@@ -405,12 +540,16 @@
 
 .floors .container .floorL .bottom1 .largeP li {
   width: 100%;
-  height: 249px;
+  height: 251px;
 }
 
 .floors .container .floorL .bottom2 .main .womanP li {
   width: 168px;
-  height: 166px;
+  height: 167px;
+}
+
+.floors .container .floorL .bottom2 .main .womanP li:nth-child(8) {
+  width: 336px;
 }
 
 .floors .container .floorL .bottom3 .main .manP_l {
@@ -423,7 +562,12 @@
 
 .floors .container .floorL .bottom3 .main li {
   width: 168px;
-  height: 166px;
+  height: 167px;
+}
+
+.floors .container .floorL .bottom3 .main .manP_r li:first-child {
+  height: 334px;
+  width: 336px;
 }
 
 .floors .container .floorL .bottom4 .main .huwai_l {
@@ -432,7 +576,7 @@
 
 .floors .container .floorL .bottom4 .main .huwai_l li {
   width: 168px;
-  height: 166px;
+  height: 167px;
 }
 
 .floors .container .floorL .bottom4 .main .huwai_c {
@@ -441,7 +585,7 @@
 
 .floors .container .floorL .bottom4 .main .huwai_c li {
   width: 336px;
-  height: 166px;
+  height: 167px;
 }
 
 .floors .container .floorL .bottom4 .main .huwai_r {
@@ -450,7 +594,12 @@
 
 .floors .container .floorL .bottom4 .main .huwai_r li {
   width: 166px;
-  height: 166px;
+  height: 167px;
+}
+
+.floors .container .floorL .bottom4 .main .huwai_r li:first-child {
+  width: 336px;
+  height: 333px;
 }
 
 .floors .container .floorL .bottom5 .main .child_l {
@@ -461,11 +610,16 @@
   width: 504px;
 }
 
+.floors .container .floorL .bottom5 .main .child_c li:first-child {
+  height: 333px;
+  width: 501px;
+}
+
 .floors .container .floorL .bottom5 .main .child_r {
   width: 168px;
 }
 
 .floors .container .floorL .bottom5 .main li {
   width: 168px;
-  height: 166px;
+  height: 167px;
 }

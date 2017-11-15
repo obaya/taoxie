@@ -54,6 +54,7 @@
             height: 84px;
             border:2px solid #ccc;
             position:relative;
+
             .toPrev,.toNext{
                 position:absolute;
                 top: 18px;
@@ -69,6 +70,87 @@
                 right: 0;
                 background: url('../img/tab-right.gif') no-repeat;
             }
+            .box{
+                width: 1140px;
+                height: 100%;
+                margin:6px 0;
+                overflow:hidden;
+                position:absolute;
+                left: 26px;
+                ul.brandsbox{
+                    width: 2280px;
+                    position:absolute;
+                    left: 0;
+                    li a{
+                        display:inline-block;
+                        float: left;
+                        width: 71px;
+                        height: 69px;
+                        border-right:1px solid #ccc;
+                        text-align:center;
+                        font-size:12px;
+                        color:#333;
+                        i{
+                            display:block;
+                            margin:0 0 5px 8px;
+                            width: 56px;
+                            height: 42px;
+                            background-image:url('../img/brandlist.gif');
+                            background-repeat:no-repeat;
+                        }
+                        .nike{
+                            background-position:0 0;
+                        }
+                        .adidas{
+                            background-position:0 -44px;
+                        }
+                        .san{
+                            background-position:0 -1232px;
+                        }
+                        .nb{
+                            background-position:0 -1672px;
+                        }
+                        .skq{
+                            background-position:0 -5280px;
+                        }
+                        .kw{
+                            background-position:0 -88px;
+                        }
+                        .dsn{
+                            background-position:0 -1760px;
+                        }
+                        .fk{
+                            background-position:0 -660px;
+                        }
+                        .tb{
+                            background-position:0 -176px;
+                        }
+                        .zsn{
+                            background-position:0 -3432px;
+                        }
+                        .361{
+                            background-position:0 -220px;
+                        }
+                        .afs{
+                            background-position:0 -5236px;
+                        }
+                        .qwt{
+                            background-position:0 -4312px;
+                        }
+                        .kdm{
+                            background-position:0 -1716px;
+                        }
+                        .dfn{
+                            background-position:0 -1056px;
+                        }
+                        .xg{
+                            background-position:0 -3300px;
+                        }
+
+                    }
+                }
+            }
+
         }   
     }
 }
@@ -342,12 +424,43 @@
                 // 下面的右边部分
                 .rank{
                     width: 183px;
-                    li{
+                    .r{
                         width: 100%;
-                        height: 33px;
+                        height: 34px;
                         border-right:1px solid #ddd;
                         border-bottom:1px solid #ddd;
                         border-left:1px solid #ddd;
+                        ul{
+                            height: 100%;
+                            font-size:12px;
+                            li{
+                                float: left;
+
+                                img{
+                                    width: 30px;
+                                }
+                                
+                                .name{
+                                    display:inline-block;
+                                    width: 70px;
+                                    color:#ababab;
+                                    text-align:center;
+                                    padding-top:8px;
+                                }
+                                .yishou,.qty{
+                                    display:inline-block;
+                                    padding-top:8px;
+                                    padding-right:5px;
+                                    color:green;
+                                }
+                                .qty{
+                                    color:orange;
+                                }
+                            }
+                            .shuzi{
+                                    margin:5px;
+                                }
+                        }
                         
                     }
                 }              
@@ -359,14 +472,14 @@
                     
                     li{
                         width: 166px;
-                        height: 166px;
+                        height: 167px;
                     }
                 }
                 .largeP{
                     width: 340px;
                     li{
                         width: 100%;
-                        height: 249px;
+                        height: 251px;
                     }
                 }
             }
@@ -375,8 +488,12 @@
                     .womanP{
                         li{
                             width: 168px;
-                            height: 166px;
+                            height: 167px;
                         }
+
+                    }
+                    .womanP li:nth-child(8){
+                        width:336px;
                     }
                 }
             }
@@ -390,7 +507,12 @@
                     }
                     li{
                         width: 168px;
-                        height: 166px;
+                        height: 167px;
+                    }
+                    .manP_r li:first-child{
+                        height:334px;
+                        width:336px;
+
                     }
                     
                 }
@@ -401,22 +523,26 @@
                         width: 168px;
                         li{
                             width: 168px;
-                            height: 166px;
+                            height: 167px;
                         }
                     }
                     .huwai_c{
                         width: 336px;
                         li{
                             width: 336px;
-                            height: 166px;
+                            height: 167px;
                         }
                     }
                     .huwai_r{
                         width: 336px;
                         li{
                             width: 166px;
-                            height: 166px;
+                            height: 167px;
                         }
+                    }
+                    .huwai_r li:first-child{
+                        width: 336px;
+                        height: 333px;
                     }
                 }
             }
@@ -428,12 +554,16 @@
                     .child_c{
                         width: 504px;
                     }
+                    .child_c li:first-child{
+                        height:333px;
+                        width:501px;
+                    }
                     .child_r{
                         width: 168px;             
                     }
                     li{
                         width: 168px;
-                        height: 166px;
+                        height: 167px;
                     }
                 }
             }

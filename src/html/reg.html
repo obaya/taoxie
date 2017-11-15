@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>登录-验证用户名和密码是否正确</title>
-    <!-- http://localhost:3333/html/register.html -->
-    <!-- 利用php+mySQL -->
+    <title>注册-验证用户名是否被占用</title>
+    <!-- http://localhost:3333/html/reg.html -->
+    <!-- 要用到php -->
     <link rel="stylesheet" type="text/css" href="../css/base.css" />
     <link rel="stylesheet" type="text/css" href="../css/signin.css" />
     <script src="../js/common.js"></script>
     <script src="../js/jquery-3.2.1.js"></script> 
-    <script src="../js/register.js"></script>
+    <script src="../js/ajax.js"></script> 
+    <script src="../js/signin.js"></script>
 </head>
-<body>  
+<body>   
     <div class="all">
         <div class="headerS">
             <div class="container">
@@ -28,43 +29,41 @@
         </div>
         <div class="contentS">
             <div class="container clearfix">
-                <div class="pic1 fl">
-                    <img src="../img/reg_big.png" />
+                <div class="pic fl">
+                    <img src="../img/sig_big.png" />
                 </div>
 
-                <form class="register">
-                    <h4>登录</h4>
+                <form class="signin">
+                    <h4>用户注册</h4>
                     <img src="../img/sig_line.png" />
                     <div class="username formItem">
                         <label for="username">登录名：</label>
-                        <input type="text" id="username"/>                         
+                        <input type="text" id="username"/>
+                        <div>请填写手机或者电子邮箱</div>                   
                     </div>
                     <div class="password formItem">
-                        <label for="password">密码：</label>
-                        <input type="password" id="password"/>                   
+                        <label for="password">设置密码：</label>
+                        <input type="password" id="password"/>
+                        <div>6-20位，区分大小写, 不能与用户名相同。</div>
+                    </div>
+                    <div class="password2 formItem">
+                        <label for="password2">确认密码：</label>
+                        <input type="password" id="password2"/>
+                        <div>请再输入一遍您上面输入的密码</div>
+                    </div>
+                    <div class="yzm formItem">
+                        <label for="yzm">验证码：</label>
+                        <input type="text" id="yzm"/>
+                        <span class="getYZM">getYzm</span>
+                        <span>(<a href="#">换个验证码</a>)</span>
+                        <div>请输入右侧的验证码</div>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" />我是淘鞋招行联名卡用户
                     </div>
                     <div class="last">
-                        <button>登 录</button>
-                        <a href="#">忘记密码？</a>
-                    </div>
-                    <div class="centerR">
-                        <span>没有淘鞋账号？</span>
-                        <a href="#">立即注册</a>
-                        <a href="#">淘鞋招行联名用户注册</a>
-                    </div>
-                    <div class="centerR1">
-                        <p>使用合作网站账号登录：</p>
-                        
-                    </div>
-                    <div class="pic2">
-                        <i class="tao"></i>
-                        <i class="xin"></i>
-                        <i class="kai"></i>
-                        <i class="qq"></i>
-                        <i class="wang"></i>
-                        <i class="ren"></i>
-                        <i class="xun"></i>
-                        <i class="shou"></i>
+                        <button>同意协议并注册</button>
+                        <a href="#">《淘鞋网服务协议》</a>
                     </div>
                 </form>
             </div>
@@ -85,6 +84,6 @@
                 </ul>
             </div>
         </div>
-    </div>   
+    </div>
 </body>
 </html>

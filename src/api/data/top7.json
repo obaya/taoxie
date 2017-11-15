@@ -1,0 +1,53 @@
+[
+    {
+        "id":"1",
+        "imgurl":"../img/te1.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":410
+    },
+    {
+        "id":"2",
+        "imgurl":"../img/te2.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":392
+    },
+    {
+        "id":"3",
+        "imgurl":"../img/te3.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":392
+    },
+    {
+        "id":"4",
+        "imgurl":"../img/te4.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":392
+    },
+    {
+        "id":"5",
+        "imgurl":"../img/te5.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":284
+    },
+    {
+        "id":"6",
+        "imgurl":"../img/te6.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":258
+    },
+    {
+        "id":"7",
+        "imgurl":"../img/te7.jpg",
+        "name":"特步",
+        "yishou":"已售",
+        "qty":258
+    },
+    
+
+]

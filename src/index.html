@@ -14,7 +14,9 @@
     <script src="js/jquery-3.2.1.js"></script> 
     <!-- <script src="lib/bootstrap-3.3.7-dist"></script> -->
     <script src="lib/jquery.lxCarousel/jquery.lxCarousel.js"></script>
+    <script src="js/ajax.js"></script>
     <script src="js/index.js"></script>
+
     <script src="js/gonggong.js"></script>
 
 </head>
@@ -42,15 +44,41 @@
             <div class="container">
                 <div class="allbrands">
                     <div class="toPrev"></div>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <i></i>
-                                耐克
-                                <!-- 这里应该由数据生成 -->
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="box clearfix">
+                        <ul class="brandsbox">
+                            <li><a href=""><i class="nike" ></i>耐克</a></li>
+                            <li><a href=""><i class="adidas" ></i>阿迪达斯</a></li>
+                            <li><a href=""><i class="san" ></i>三叶草</a></li>
+                            <li><a href=""><i class="nb" ></i>新百伦</a></li>
+                            <li><a href=""><i class="skq" ></i>斯凯奇</a></li>
+                            <li><a href=""><i class="kw" ></i>匡威</a></li>
+                            <li><a href=""><i class="dsn" ></i>迪士尼</a></li>
+                            <li><a href=""><i class="fk" ></i>飞克</a></li>
+                            <li><a href=""><i class="tb" ></i>特步</a></li>
+                            <li><a href=""><i class="zsn" ></i>卓诗尼</a></li>
+                            <li><a href=""><i class="361" ></i>361度</a></li>
+                            <li><a href=""><i class="afs" ></i>艾弗森</a></li>
+                            <li><a href=""><i class="qwt" ></i>青婉田</a></li>
+                            <li><a href=""><i class="kdm" ></i>凯蒂猫</a></li>
+                            <li><a href=""><i class="dfn" ></i>达芙妮</a></li>
+                            <li><a href=""><i class="xg" ></i>鞋柜</a></li>
+                            <li><a href=""><i class="kw" ></i>匡威</a></li>
+                            <li><a href=""><i class="dsn" ></i>迪士尼</a></li>
+                            <li><a href=""><i class="fk" ></i>飞克</a></li>
+                            <li><a href=""><i class="tb" ></i>特步</a></li>
+                            <li><a href=""><i class="zsn" ></i>卓诗尼</a></li>
+                            <li><a href=""><i class="skq" ></i>斯凯奇</a></li>
+                            <li><a href=""><i class="kw" ></i>匡威</a></li>
+                            <li><a href=""><i class="dsn" ></i>迪士尼</a></li>
+                            <li><a href=""><i class="fk" ></i>飞克</a></li>
+                            <li><a href=""><i class="tb" ></i>特步</a></li>
+                            <li><a href=""><i class="afs" ></i>艾弗森</a></li>
+                            <li><a href=""><i class="qwt" ></i>青婉田</a></li>
+                            <li><a href=""><i class="kdm" ></i>凯蒂猫</a></li>
+                            <li><a href=""><i class="dfn" ></i>达芙妮</a></li>
+                            <li><a href=""><i class="xg" ></i>鞋柜</a></li>
+                        </ul>
+                    </div>
                     <div class="toNext"></div>
                 </div>
             </div>
@@ -113,20 +141,20 @@
                     <div class="bottom1 bottom clearfix">
                         <div class="attrs fl">
                             <ul class="brands">
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""><img src="img/1nike.png"/></a></li>
+                                <li><a href=""><img src="img/1flyke.png"/></a></li>
+                                <li><a href=""><img src="img/1iverson.png"/></a></li>
+                                <li><a href=""><img src="img/1lining.png"/></a></li>
+                                <li><a href=""><img src="img/1mizuno.png"/></a></li>
+                                <li><a href=""><img src="img/1piipiinoo.png"/></a></li>
+                                <li><a href=""><img src="img/1qiaodan.png"/></a></li>
+                                <li><a href=""><img src="img/1voit.png"/></a></li>
+                                <li><a href=""><img src="img/1xtep.png"/></a></li>
+                                <li><a href=""><img src="img/1361.png"/></a></li>
+                                <li><a href=""><img src="img/1adidas.png"/></a></li>
+                                <li><a href=""><img src="img/1camel.png"/></a></li>
+                                <li><a href=""><img src="img/1converse.png"/></a></li>
+                                <li><a href=""><img src="img/1newbalance.png"/></a></li>
                             </ul>
                             <ul class="sizes clearfix">
                                 <li><a href="" target="_blank">35</a></li>
@@ -153,6 +181,7 @@
                         </div>
                         <div class="main fl">
                             <ul class="smallP fl">
+                               <!--  <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
@@ -160,23 +189,30 @@
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""></a></li> -->
                             </ul>
                             <ul class="largeP fl">
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <!-- <li><a href=""></a></li>
+                                <li><a href=""></a></li> -->
                             </ul>
                         </div>
                         <div class="rank fr">
                             <ul class="rankT">
-                                <li><em>1</em></li>
-                                <li><em>2</em></li>
-                                <li><em>3</em></li>
-                                <li><em>4</em></li>
-                                <li><em>5</em></li>
-                                <li><em>6</em></li>
-                                <li><em>7</em></li>
+                                <li>
+                                    <!-- <ul>
+                                        <li>1</li>
+                                        <li><img src="" alt="" /></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                    </ul> -->
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                             <a href=""><img src="img/new1.jpg" alt="" /></a>
                         </div>
@@ -207,20 +243,20 @@
                     <div class="bottom2 bottom">
                         <div class="attrs fl">
                             <ul class="brands">
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""></a><img src="img/2comely.png"/></li>
+                                <li><a href=""></a><img src="img/2daphne.png"/></li>
+                                <li><a href=""></a><img src="img/2dusto.png"/></li>
+                                <li><a href=""></a><img src="img/2harson.png"/></li>
+                                <li><a href=""></a><img src="img/2hotwind.png"/></li>
+                                <li><a href=""></a><img src="img/2josiny.png"/></li>
+                                <li><a href=""></a><img src="img/2kadina.png"/></li>
+                                <li><a href=""></a><img src="img/2lesaunda.png"/></li>
+                                <li><a href=""></a><img src="img/2manzanitasol.png"/></li>
+                                <li><a href=""></a><img src="img/2pony.png"/></li>
+                                <li><a href=""></a><img src="img/2qingwantian.png"/></li>
+                                <li><a href=""></a><img src="img/2shoebox.png"/></li>
+                                <li><a href=""></a><img src="img/2st-sat.png"/></li>
+                                <li><a href=""></a><img src="img/2taomeixie.png"/></li>
                             </ul>
                             <ul class="sizes clearfix">
                                 <li><a href="" target="_blank">34</a></li>
@@ -244,7 +280,7 @@
                         <!-- 女鞋中间的图片 -->
                         <div class="main fl">
                             <ul class="womanP clearfix">
-                                <li><a href=""></a></li>
+                                <!-- <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
@@ -257,18 +293,18 @@
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""></a></li> -->
                             </ul>
                         </div>
                         <div class="rank fr">
                             <ul class="rankT">
-                                <li><em>1</em></li>
-                                <li><em>2</em></li>
-                                <li><em>3</em></li>
-                                <li><em>4</em></li>
-                                <li><em>5</em></li>
-                                <li><em>6</em></li>
-                                <li><em>7</em></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                             <a href=""><img src="img/new2.jpg" alt="" /></a>
                         </div>
@@ -298,13 +334,13 @@
                     <div class="bottom3 bottom">
                         <div class="attrs fl">
                             <ul class="brands">
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""><img src="img/2hotwind.png"/></a></li>
+                                <li><a href=""><img src="img/2taomeixie.png"/></a></li>
+                                <li><a href=""><img src="img/2manzanitasol.png"/></a></li>
+                                <li><a href=""><img src="img/2harson.png"/></a></li>
+                                <li><a href=""><img src="img/1qiaodan.png"/></a></li>
+                                <li><a href=""><img src="img/2comely.png"/></a></li>
+                                <li><a href=""><img src="img/1flyke.png"/></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
@@ -338,20 +374,20 @@
                         <!-- 女鞋中间的图片 -->
                         <div class="main fl">
                             <ul class="manP_l clearfix fl">
+                                <!-- <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""></a></li> -->
                             </ul>
                             <ul class="manP_r clearfix fl">
-                                <li style="height:332px;width:336px;"><a href=""></a></li>
+                                <!-- <li style="height:332px;width:336px;"><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""></a></li> -->
                                 
                                 
                             </ul>
@@ -394,20 +430,20 @@
                     <div class="bottom4 bottom">
                         <div class="attrs fl">
                             <ul class="brands">
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""><img src="img/2comely.png"/></a></li>
+                                <li><a href=""><img src="img/2daphne.png"/></a></li>
+                                <li><a href=""><img src="img/2dusto.png"/></a></li>
+                                <li><a href=""><img src="img/2harson.png"/></a></li>
+                                <li><a href=""><img src="img/2hotwind.png"/></a></li>
+                                <li><a href=""><img src="img/2josiny.png"/></a></li>
+                                <li><a href=""><img src="img/2kadina.png"/></a></li>
+                                <li><a href=""><img src="img/2lesaunda.png"/></a></li>
+                                <li><a href=""><img src="img/2manzanitasol.png"/></a></li>
+                                <li><a href=""><img src="img/2pony.png"/></a></li>
+                                <li><a href=""><img src="img/2qingwantian.png"/></a></li>
+                                <li><a href=""><img src="img/2shoebox.png"/></a></li>
+                                <li><a href=""><img src="img/2st-sat.png"/></a></li>
+                                <li><a href=""><img src="img/2taomeixie.png"/></a></li>
                             </ul>
                             <ul class="sizes clearfix">
                                 <li><a href="" target="_blank">35</a></li>
@@ -437,19 +473,19 @@
                         <!-- 4楼中间图片 -->
                         <div class="main fl">
                             <ul class="huwai_l clearfix fl">
+                                <!-- <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>                      
+                                <li><a href=""></a></li>  -->                     
                             </ul>
                             <ul class="huwai_c clearfix fl">
+                                <!-- <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>     
+                                <li><a href=""></a></li>  -->    
                             </ul>
                             <ul class="huwai_r clearfix fl">
-                                <li style="height:332px;width:336px;"><a href=""></a></li>
+                                <!-- <li style="height:332px;width:336px;"><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>  
+                                <li><a href=""></a></li>  --> 
                             </ul>
 
                         </div>
@@ -489,15 +525,15 @@
                     <div class="bottom5 bottom">
                         <div class="attrs fl">
                             <ul class="brands">
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                                <li><a href=""><img src="img/2josiny.png"/></a></li>
+                                <li><a href=""><img src="img/2kadina.png"/></a></li>
+                                <li><a href=""><img src="img/2lesaunda.png"/></a></li>
+                                <li><a href=""><img src="img/2manzanitasol.png"/></a></li>
+                                <li><a href=""><img src="img/2pony.png"/></a></li>
+                                <li><a href=""><img src="img/2qingwantian.png"/></a></li>
+                                <li><a href=""><img src="img/2shoebox.png"/></a></li>
+                                <li><a href=""><img src="img/2st-sat.png"/></a></li>
+                                <li><a href=""><img src="img/2manzanitasol.png"/></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
@@ -530,20 +566,20 @@
                         <!-- 5楼中间图片 -->
                         <div class="main fl">
                             <ul class="child_l clearfix fl">
+                                <!-- <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>                      
+                                <li><a href=""></a></li>  -->                     
                             </ul>
                             <ul class="child_c clearfix fl">
-                                <li style="height:332px;width:504px;"><a href=""></a></li>
+                                <!-- <li style="height:332px;width:504px;"><a href=""></a></li>
                                 <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>     
+                                <li><a href=""></a></li> -->     
                             </ul>
                             <ul class="child_r clearfix fl">
+                                <!-- <li><a href=""></a></li>
                                 <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>  
+                                <li><a href=""></a></li>   -->
                             </ul>
 
                         </div>

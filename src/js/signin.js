@@ -65,7 +65,7 @@ jQuery(function($){
         // // 发送
         // xhr.send();
          
-        // 如何为使用封装好的ajax插件
+        // 如下为使用封装好的ajax插件
         ajax({
             type:'get',
             url:'http://localhost:3333/api/signin.php?username='+_username,

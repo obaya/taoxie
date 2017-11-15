@@ -141,8 +141,10 @@
                 }
                 // 点击时实现翻页
                 self.on('click', function(e){
+
                     if(e.target.className == 'next'){
                         this.next();
+                        clearInterval(self.timer);
                     }else if(e.target.className == 'prev'){
                         this.prev();
                     
