@@ -136,6 +136,83 @@ jQuery(function($){
         }
     })
     
+
+    // 将tab.json文件中的数据请求至页面
+    ajax({
+        type:'get',
+        url:'http://localhost:3333/api/data/tab.json',
+        async:true,
+        success:function(data){
+            var tab1 = data.slice(0,2);
+            var tab2 = data.slice(2,6);
+            var tab3 = data.slice(6,10);
+            var tab4 = data.slice(10);
+            // 遍历tab1 写入ul.tab1
+            var $Tab1 = $('.tab_content .tab1');
+            $Tab1.get(0).innerHTML = tab1.map(function(i1){
+                return `<li>
+                <div class="title">活动结束了</div>
+                <div><img src="${i1.imgurl}" ></div>
+                <div class="name">${i1.name}</div>
+                <div class="price">抢购价：${i1.price}</div>
+                </li>`
+            }).join('');
+
+            // 遍历tab1 写入ul.tab1
+            var $Tab2 = $('.tab_content .tab2');
+            $Tab2.get(0).innerHTML = tab2.map(function(i2){
+                return `<li>
+                <div><img src="${i2.imgurl}" ></div>
+                <div class="name">${i2.name}</div>
+                <div class="bprice">原价：${i2.bprice}</div>
+                <div class="nprice">${i2.nprice}</div>
+                </li>`
+            }).join('');
+
+            // 遍历tab1 写入ul.tab1
+            var $Tab3 = $('.tab_content .tab3');
+            $Tab3.get(0).innerHTML = tab3.map(function(i3){
+                return `<li>
+                <div><img src="${i3.imgurl}" ></div>
+                
+                </li>`
+            }).join('');
+
+            // 遍历tab1 写入ul.tab1
+            var $Tab4 = $('.tab_content .tab4');
+            $Tab4.get(0).innerHTML = tab4.map(function(i4){
+                return `<li>
+                <div><img src="${i4.imgurl}" ></div>
+                <div class="name">${i4.name}</div>
+                <div class="mprice">市场价：${i4.bprice}</div>
+                <div class="nprice">淘鞋价${i4.nprice}</div>
+                </li>`
+            }).join('');
+
+        }
+    });
+
+    // 页面生成之后实现tab切换
+    // 默认显示第一个ul
+    // 鼠标移入其他tab显示对应的ul
+    // // 实现点击小图切换对应的大图
+    var $tab = $('.tab_title li');
+    var $content = $('.tab_content ul');
+    // 隐藏所有的.content
+    $content.slice(1).hide();
+  
+    $tab.first().addClass('selected');
+
+    // 点击标签切换
+    $tab.on('mouseenter',function(){
+        $(this).addClass('selected').siblings().removeClass('selected');
+        var idx = $(this).index();
+        $content.eq(idx).show().siblings('ul').hide();
+    })
+
+
+
+
     // 左右按钮实现tab滑动
     var $b = $('.brandsbox');
     $('.allbrands').get(0).onclick = function(e){
@@ -147,7 +224,13 @@ jQuery(function($){
         }
         else if(target.className == 'toNext'){
             animate($b.get(0),{left:juli})        
+        }
+
     }
 
-}
+
+
+
+
+
 })

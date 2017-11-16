@@ -199,6 +199,58 @@
   font-size: 14px;
 }
 
+.tab .container .tab_left .tab_title .selected {
+  height: 40px;
+  background-color: #fff;
+  border-top: 2px solid red;
+}
+
+.tab .container .tab_left .tab_content {
+  position: relative;
+}
+
+.tab .container .tab_left .tab_content ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.tab .container .tab_left .tab_content ul li {
+  float: left;
+  margin-left: 10px;
+  width: 200px;
+  height: 280px;
+  padding: 10px;
+}
+
+.tab .container .tab_left .tab_content .tab1 li {
+  border: 1px solid #ccc;
+}
+
+.tab .container .tab_left .tab_content .tab1 li .title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+}
+
+.tab .container .tab_left .tab_content .tab1 li .name {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.tab .container .tab_left .tab_content .tab1 li .name:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.tab .container .tab_left .tab_content .tab1 li .price {
+  color: red;
+  font-size: 14px;
+}
+
 .tab .container .tab_right {
   width: 300px;
   height: 132px;

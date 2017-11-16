@@ -176,6 +176,60 @@
                     text-align:center;
                     font-size:14px;
                 }
+                .selected{
+                    height: 40px;
+                    background-color: #fff;
+                    border-top:2px solid red;
+                }
+            }
+            .tab_content{
+                position:relative;
+                ul{
+                    position:absolute;
+                    left: 0;
+                    top:0;
+                    font-size:12px;
+                    padding:10px 0;
+                    li{
+                        float: left;
+                        margin-left:10px;
+                        width: 200px;
+                        height: 280px;
+                        padding:10px;
+                    }
+                }
+
+                .tab1{
+                    
+                    li{
+                        border:1px solid #ccc;
+                        
+                        .title{
+                            height: 30px;
+                            line-height: 30px;
+                            border-bottom:1px dashed #ccc;
+                            text-align:center;
+                        }
+                        .name{
+                            padding-bottom:5px;
+                            border-bottom:1px dashed #ccc
+                        }
+                        .name:hover{
+                            color:red;
+                            text-decoration:underline;
+                        }
+                        .price{
+                            color:red;
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+                .tab2{
+                     li{
+                        
+                    }
+                }
             }
         }
         .tab_right{
