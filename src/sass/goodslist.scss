@@ -298,14 +298,40 @@
     }
     .sale_right{
         width: 411px;
-        ul{
+        
+        .tab1{
+
+            font-size:12px;
             li{
+                background-color: #fff;
+                border:1px solid #ccc;
                 float: left;
                 width: 200px;
                 height: 289px;
-                border:1px solid #ccc;
+                padding:0 10px;
+                
+                .title{
+                    height: 30px;
+                    line-height: 30px;
+                    border-bottom:1px dashed #ccc;
+                    text-align:center;
+                }
+                .name{
+                    padding-bottom:5px;
+                    border-bottom:1px dashed #ccc
+                }
+                .name:hover{
+                    color:red;
+                    text-decoration:underline;
+                }
+                .price{
+                    color:red;
+                    font-size: 14px;
+                }
             }
+
         }
+        
         ul li:first-child{
             margin-right:10px;
         }

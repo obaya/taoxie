@@ -19,15 +19,15 @@ jQuery(function($){
     // 设置分页号
     var pageNo = 1;
     var qty = 20;
+    var $goodslist = $('.goodsList');
     ajax({
         type:'get',
         url:`http://localhost:3333/api/list.php?pageNo=${pageNo}&qty=${qty}`,
         async:true,
         success:function(data){
-            var $goodslist = $('.goodsList');
             var res = data.data.map(function(item){
                 // console.log(item)
-                return `<li><div class="box_over">
+                return `<li data-id="${item.id}"><div class="box_over">
                     <div class="bImg"><a href=""><img src="${item.imgurl}" /></a></div>
                     <div class="sImg"><a href=""><img src="${item.sImgurl}" /></a></div>
                     <div><span class="np">￥${item.nPrice}</span><span class="bp">￥${item.bPrice}</span></div>
@@ -57,10 +57,9 @@ jQuery(function($){
             url:`http://localhost:3333/api/list.php?pageNo=${pageNo}&qty=${qty}`,
             async:true,
             success:function(data){
-                var $goodslist = $('.goodsList');
                 var res = data.data.map(function(item){
                     // console.log(item)
-                    return `<li><div class="box_over">
+                    return `<li data-id="${item.id}"><div class="box_over">
                         <div class="bImg"><a href=""><img src="${item.imgurl}" /></a></div>
                         <div class="sImg"><a href=""><img src="${item.sImgurl}" /></a></div>
                         <div><span class="np">￥${item.nPrice}</span><span class="bp">￥${item.bPrice}</span></div>
@@ -92,10 +91,9 @@ jQuery(function($){
             url:`http://localhost:3333/api/list.php?pageNo=${pageNo}&qty=${qty}`,
             async:true,
             success:function(data){
-                var $goodslist = $('.goodsList');
                 var res = data.data.map(function(item){
                     // console.log(item)
-                    return `<li><div class="box_over">
+                    return `<li data-id="${item.id}"><div class="box_over">
                         <div class="bImg"><a href=""><img src="${item.imgurl}" /></a></div>
                         <div class="sImg"><a href=""><img src="${item.sImgurl}" /></a></div>
                         <div><span class="np">￥${item.nPrice}</span><span class="bp">￥${item.bPrice}</span></div>
@@ -114,6 +112,36 @@ jQuery(function($){
         });
         
     });
+
+    // 点击li时通过data-id获取到当前li对应的数据库中的id
+    $goodslist.on('click','li',function(e){
+        e.preventDefault();
+        var goodsId = $(this).attr('data-id');
+        // 将id传给goods.php
+        ajax({
+            type:'get',
+            url:`http://localhost:3333/api/goods.php?id=${goodsId}`,
+            async:true,
+            success:function(data){
+                console.log(data)
+                // data为每一个商品的详细信息
+                // 使用location.href将商品信息传递出去
+                // 将data转为url形式
+                var params = "?";
+                // 遍历对象
+                for(var attr in data){
+                    console.log(attr)
+                    params += attr + '=' + encodeURI(data[attr])+'&';
+                }
+                // 去掉多余的&
+                params=params.slice(0,-1);
+                
+                location.href='goods.html'+ params;      
+                
+            }
+        });
+        
+    })
            
 
 
@@ -133,5 +161,31 @@ jQuery(function($){
         $(this).find('.size').hide();
         $(this).find('.box_over').css({'border':'1px solid #ccc'})
     })
+
+
+
+
+    // 将tab.json文件中的数据请求至页面
+    ajax({
+        type:'get',
+        url:'http://localhost:3333/api/data/tab.json',
+        async:true,
+        success:function(data){
+            var tab1 = data.slice(0,2);
+            // 遍历tab1 写入ul.tab1
+            var $Tab1 = $('.sale_right .tab1');
+            $Tab1.get(0).innerHTML = tab1.map(function(i1){
+                return `<li>
+                <div class="title">活动结束了</div>
+                <div><img src="../${i1.imgurl}" ></div>
+                <div class="name">${i1.name}</div>
+                <div class="price">抢购价：${i1.price}</div>
+                </li>`
+            }).join('');
+
+            
+
+        }
+    });
 
 })

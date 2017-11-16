@@ -115,5 +115,52 @@ jQuery(function($){
                 
             }
        })
+
+        // 获取详情页传递过来的url
+        var params = location.search;
+
+        // 去掉问号
+        params=params.slice(1);
+
+        // 要变成对象先将字符串转为数组split
+        params = params.split('&');
+
+        // 遍历数组，生成对象
+        var data={};
+        params.forEach(function(item){
+            console.log(item)
+            // 将数组中的字符串拆成数组
+            var arr=item.split('=');
+            data[arr[0]]=decodeURI(arr[1]);
+        })
+        console.log(data);
+        console.log(typeof(data));
+
+        // 现在data是数据库中写入的商品信息
+        // 将商品信息写入页面
+       
+        $('.getData').get(0).innerHTML = `<h1>${data[5]} </h1>
+            <div class="info">
+                <div class="d-price">
+                    <label>淘鞋价：</label>
+                    <span class="realP">${data[3]} </span> 
+                </div>
+
+                <div class="marketP">
+                    <label>专柜价：</label>
+                    <del>${data[4]}</del>元(5.0折&nbsp;省120元&nbsp;单件送 <em>1</em> 鞋币)
+                </div>
+                <div>物流费用：全场包邮(不包括货到付款)</div>
+                <div style="color:red">温馨提示：本款不支持货到付款和顺丰快递 </div>
+
+                <div class="pjia">商品评分：
+                    <span class="star star-5"></span>5.0(<a id="t_CommentTab" href="#">已有0人评价</a>)
+                </div>
+            </div>`
+            
+      // $('.bigger').get(0).innerHTML = `<li><img src="${data[1]}" ></li>`
+      // $('.smaller').get(0).innerHTML = `<li><img src="${data[2]}" ></li>`
+        
+
         
 });

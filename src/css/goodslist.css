@@ -297,11 +297,39 @@
   width: 411px;
 }
 
-.saleItems .sale_right ul li {
+.saleItems .sale_right .tab1 {
+  font-size: 12px;
+}
+
+.saleItems .sale_right .tab1 li {
+  background-color: #fff;
+  border: 1px solid #ccc;
   float: left;
   width: 200px;
   height: 289px;
-  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.saleItems .sale_right .tab1 li .title {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+}
+
+.saleItems .sale_right .tab1 li .name {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.saleItems .sale_right .tab1 li .name:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.saleItems .sale_right .tab1 li .price {
+  color: red;
+  font-size: 14px;
 }
 
 .saleItems .sale_right ul li:first-child {

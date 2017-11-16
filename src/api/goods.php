@@ -31,5 +31,6 @@
 
     // 把数组转换成json字符串
     $res = json_encode($row,JSON_UNESCAPED_UNICODE);
+    // var_dump( $res)
     echo "$res";
 ?>
