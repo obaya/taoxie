@@ -263,3 +263,95 @@
         }
     }
 }
+
+
+// 喜欢本商品的用户还喜欢
+.also_like{
+    height: 308px;
+    margin-top:54px;
+    .container{
+        border:1px solid #ccc;
+        .like_top{
+            height: 33px;
+            background-color: #eee;
+            line-height: 33px;
+            padding-left:10px;
+            font-size:14px;
+        }
+        .like_bottom{
+            ul{
+                height: 275px;
+                display:flex;
+                li{
+                    flex:1;
+                    float: left;
+                    font-size:12px;
+                    margin:10px;
+                }
+            }
+        }
+    }
+}
+
+
+.main_show{
+    height: 2000px;
+    margin-top:10px;
+    .show_left{
+        width: 220px;
+        margin-right:20px;
+        border:1px solid #ccc;
+        p{
+            height: 33px;
+            background-color: #eee;
+            padding-left:10px;
+            line-height: 33px;
+            font-size:14px;
+            border-bottom:1px solid #ccc;
+        }
+        ul{
+            padding:0 31px;
+            li{
+                img{
+                    width: 158px;
+                }
+                .price{
+                    text-align:center;
+                    border-top:1px solid #ddd;
+                    color:#333;
+                    font-size:14px;
+                    padding-top:3px;
+                }
+            }
+        }
+    }
+    .show_right{
+        width: 960px;
+        border:1px solid #ccc;
+        .show_r_top{
+            height: 33px;
+            background-color: #eee;
+            padding-left:10px;
+            line-height: 32px;
+            font-size:14px;
+            border-bottom:1px solid #ccc;
+            li{
+                float: left;
+                padding:0px 23px;
+            }
+        }
+        .show_r_center{
+            height: 78px;
+            padding:10px 0 0 15px;
+            li{
+                width: 300px;
+                float: left;
+                font-size:10px;
+                color:#444;
+                padding:5px 0;
+            }
+        }
+    }
+    
+          
+}

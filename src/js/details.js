@@ -116,7 +116,7 @@ jQuery(function($){
             }
        })
 
-        // 获取详情页传递过来的url
+        // 获取列表页传递过来的url
         var params = location.search;
 
         // 去掉问号
@@ -128,13 +128,10 @@ jQuery(function($){
         // 遍历数组，生成对象
         var data={};
         params.forEach(function(item){
-            console.log(item)
             // 将数组中的字符串拆成数组
             var arr=item.split('=');
             data[arr[0]]=decodeURI(arr[1]);
         })
-        console.log(data);
-        console.log(typeof(data));
 
         // 现在data是数据库中写入的商品信息
         // 将商品信息写入页面
