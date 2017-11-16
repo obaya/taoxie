@@ -3,10 +3,15 @@
 
 <?php
 
+
+
     // 引入其他php文件
     include 'connect.php'; 
 
 
+    // 获取前端传递过来的参数
+    $pageNo=isset($_GET['pageNo'])?$_GET['pageNo']:1;
+    $qty=isset($_GET['qty'])?$_GET['qty']:10;
 
     
     // 连接成功之后编写sql语句
@@ -18,9 +23,13 @@
 
     // 使用查询结果集
     $row = $result->fetch_all(MYSQLI_ASSOC);
-    // var_dump($row);
+
+    $res=array(
+        'data'=>array_slice($row,($pageNo-1)*$qty,$qty),
+        'total'=>count($row)//数组总数量
+            );
 
     // 把数组转换成json字符串
-    $res = json_encode($row,JSON_UNESCAPED_UNICODE);
-    echo($res);
+    
+    echo json_encode($res,JSON_UNESCAPED_UNICODE);
 ?>

@@ -194,37 +194,72 @@
             }
         }
         .a_t_right{
-            .current{
-                font-family: Tahoma, Geneva, sans-serifs;
-                font-size: 12px;
-                line-height: 20px;
-                white-space: nowrap;
+            a{
+                color:#222;
             }
-            .prev{
-                    height: 18px;
+            .prev,.next{
+                    display:inline-block;
+                    height: 25px;
                     border: 1px solid #d7d7d7;
-                    line-height: 18px;
-                    background: url(http://img.taoxie.com/pager/pager_prev_ar.gif) no-repeat;
-                    background-position: 6px -26px;
-                    overflow: hidden;
-                    text-indent: -99999em;
-                    width: 10px;
+                    line-height: 25px;
+                    width: 60px;
+                    text-align:center;
             }
         }
+        
     }
     .all_bottom{
         margin-top:19px;
         
-        ul{
-            min-height:1000px;
+            // min-height:1000px;
+        .goodsList{
             li{
-                width: 234px;
-                height: 308px;
-                border:1px solid #ccc;
+                height: 350px;
                 float: left;
-                margin-right:7px;
+                padding:5px;
+            .box_over{
+                padding: 2px;
+                margin: -1px;
+                width: 232px;
+                height: 313px;
+                border:1px solid #ccc;
                 margin-bottom:45px;
+                .np{
+                    color:#FF5500;
+                    font-size:18px;
+                }
+                .bp{
+                    color:#888888;
+                    font-size: 10px;
+                    text-decoration:line-through;
+                }
+                .title{
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    a{
+                        color:#888888;
+                        font-size: 12px;
+                        white-space:nowrap;
+                    }
+                    a:hover{
+                        color:red;
+                        text-decoration:underline;
+                    }
+
+                }
+                .size{
+                    font-size:10px;
+                    display:none;
+                }
             }
+            }
+            
+
+            li.gaoliang{
+                border:3px solid #f00;
+                padding:2px;
+            }
+
         }
         ul li:nth-child(5n){
             margin-right:0px;

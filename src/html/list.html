@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/goodslist.css" />
     <script src="../js/common.js"></script>
     <script src="../js/jquery-3.2.1.js"></script> 
+    <script src="../js/ajax.js"></script>
     <script src="../js/goodslist.js"></script>
     <script src="../js/gonggong.js"></script>
     
@@ -21,7 +22,7 @@
         <div class="getHeader"></div>
 
         <div class="main_list">
-            <div class="container">
+            <div class="container clearfix">
                 <!-- 上面的三张图片 -->
                 <ul class="pic_3">
                     <li><a href=""><img src="../img/goodslist1.jpg" /></a></li>
@@ -195,7 +196,7 @@
                 </div>
                 
                 <!-- 所有商品list -->
-                <div class="allItems">
+                <div class="allItems clearfix">
                     <div class="all_top">
                         <ul class="a_t_left fl">
                             <li><a class="selected" href="">综合</a></li>
@@ -211,31 +212,29 @@
                         </div>
                         <!-- 还没有做完 -->
                         <div class="a_t_right fr">
-                            <div class="current">1/2</div>
-                            <a class="prev no-prev" href=""><em>上一页</em></a>
-                            <a class="next" href=""><em>下一页</em></a>
+                            
+                            <a class="prev no-prev" href="">上一页</a>
+                            <a class="next" href="">下一页</a>
                         </div>
                         
 
                     </div>
-                    <div class="all_bottom">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    <div class="all_bottom clearfix">
+                        <ul class="goodsList clearfix">
+                            <li>
+                                <!-- <div class="bImg"><a href=""><img src="" alt="" /></a></div>
+                                <div class="sImg"><a href=""><img src="" alt="" /></a></div>
+                                <div><span>￥99</span><span>￥269</span></div>
+                                <div><a href="">HELLO KITTY童鞋女童公主皮鞋2017秋季</a></div>
+                                <div>尺码：26、27、28、29、30、31、32、33、34、35、36、37</div> -->
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>
 
 
-                
+
                 <!-- 特卖部分 -->
                 <div class="saleItems">
                     <div class="sale_left  fl">
