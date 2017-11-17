@@ -132,10 +132,11 @@ jQuery(function($){
                     url:`http://localhost:3333/api/reg.php?username=${_username}&password=${_password}`,
                     async:true,
                     success:function(data){  
-                        console.log(_username,_password)             
+
                         
                     }
                 })
+                alert('注册成功') 
         }
     })
 

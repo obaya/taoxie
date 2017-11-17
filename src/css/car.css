@@ -170,6 +170,51 @@
   border: 1px solid #ddd;
 }
 
+.cart .car_bottom .container .carlist tbody.cargoods tr td {
+  text-align: center;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr td.title {
+  text-align: left;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr td.title a {
+  color: #555;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr td.title a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr .price {
+  color: #f00;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr .qty a {
+  width: 14px;
+  height: 18px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr .qty .left {
+  background: url("../img/car_left.gif") no-repeat;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr .qty .right {
+  background: url("../img/car_right.gif") no-repeat;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods tr .qty input {
+  display: inline-block;
+  height: 20px;
+  width: 43px;
+  text-align: center;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
 .cart .car_bottom .container .carlist tfoot .first_f {
   height: 72px;
   border: 1px solid #ddd;

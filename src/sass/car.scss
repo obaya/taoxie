@@ -149,8 +149,50 @@
                     }
                 }
                 tbody.cargoods tr{
-                  background: #FDFEEE;
+                    background: #FDFEEE;
                     border:1px solid #ddd; 
+                    // padding-left:10px;
+                    td{
+                       text-align:center;
+                    }
+                    td.title{
+                        text-align:left;
+                        a{
+                            color:#555;
+
+                        }
+                        a:hover{
+                            color:#f00;
+                            text-decoration:underline;
+                        }
+                    }
+                    .price{
+                        color:#f00;
+                    }
+                    .qty{
+                        
+                        a{
+                            width: 14px;
+                            height: 18px;
+                            vertical-align: middle;
+                            display:inline-block;
+                            
+                        }
+                        .left{
+                            background: url('../img/car_left.gif') no-repeat;
+                        }
+                        .right{
+                            background: url('../img/car_right.gif') no-repeat;
+                        }
+                        input{
+                            display:inline-block;
+                            height: 20px;
+                            width: 43px;
+                            text-align: center;
+                            margin: 0;
+                            border:1px solid#ccc;
+                        }
+                    }
                 }
 
                 tfoot{

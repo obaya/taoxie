@@ -140,6 +140,10 @@
   border: 1px solid #ccc;
 }
 
+.main_get .container .get_bottom .g_b_right .chooseI .color dd em {
+  display: none;
+}
+
 .main_get .container .get_bottom .g_b_right .chooseI .color dd.gaoliang {
   border: 2px solid red;
 }

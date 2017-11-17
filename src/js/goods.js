@@ -79,9 +79,17 @@ jQuery(function($){
     
        // 加入购物车效果
        // 点击addcart按钮，复制有class=高亮的图片
+       // 避免覆盖先获取页面上的所有cookie
+        var goodslist = obj.get('goodslist');
        
+       if(!goodslist){
+            goodslist = [];
+        }else{
+            goodslist = JSON.parse(goodslist);
+        }
         var $cartBtn = $('.addcart');
-        $cartBtn.on('click',function(){
+        $cartBtn.on('click',function(e){
+            e.preventDefault();
             if( !boo || !boo1 ){
                 $('.qty span').text('请选择好颜色和尺码');
             }else{
@@ -114,7 +122,51 @@ jQuery(function($){
                 });
                 
             }
-       })
+
+            // 点击加购时将商品颜色和尺码传入car.php以获取商品信息写入cookie
+            // color下的.gaoliang下面的em的innerHTML
+            var c = $('.chooseI .color .gaoliang em').html();
+            var s = $('.chooseI .size .gaoliang a').html();
+            // console.log(c,s)
+            ajax({
+                type:'get',
+                url:`http://localhost:3333/api/car.php?color=${c}&size=${s}`,
+                async:true,
+                success:function(data){
+                    // 把数量加上去
+                    data.push(Number($('#quantity').val()));
+                    
+                    // goodslist.push(data);
+                    // // 判断当前商品是否存在cookie
+                    var currentIdx;//用这个变量去接收索引值，好拿到对应的qty
+                    
+                    var res = goodslist.some(function(item,idx){
+                        currentIdx = idx;
+                        return (item[1] == data[1])
+                       
+                    })
+                    // console.log(goodslist)
+                    if(res){
+                        goodslist[currentIdx][8] += Number($('#quantity').val());
+                    }else{
+                        goodslist.push(data);
+                        
+                    }
+                    
+                    // 商品存在购物车中的时间
+                    var now = new Date();
+                    now.setDate(now.getDate()+365);
+                    // 把商品信息写入cookie
+                    obj.set('goodslist',JSON.stringify(goodslist),now); 
+                    
+                }
+            })
+
+
+
+        })
+
+
 
         // 获取列表页传递过来的url
         var params = location.search;
@@ -137,7 +189,7 @@ jQuery(function($){
         // 将商品信息写入页面
        
         $('.getData').get(0).innerHTML = `<h1>${data[5]} </h1>
-            <div class="info">
+            <div class="info" data-guid="${data[0]}">
                 <div class="d-price">
                     <label>淘鞋价：</label>
                     <span class="realP">${data[3]} </span> 
