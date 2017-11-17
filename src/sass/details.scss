@@ -295,7 +295,6 @@
 
 
 .main_show{
-    height: 2000px;
     margin-top:10px;
     .show_left{
         width: 220px;
@@ -327,7 +326,8 @@
     }
     .show_right{
         width: 960px;
-        border:1px solid #ccc;
+        margin-bottom:30px;
+       
         .show_r_top{
             height: 33px;
             background-color: #eee;
@@ -343,6 +343,7 @@
         .show_r_center{
             height: 78px;
             padding:10px 0 0 15px;
+            border-bottom:1px solid #ccc;
             li{
                 width: 300px;
                 float: left;
@@ -351,7 +352,207 @@
                 padding:5px 0;
             }
         }
+        .show_r_bottom{
+            padding:0 20px 50px;
+            .t{
+                width: 920px;
+                height: 200px;
+                margin-bottom:125px;
+
+            }
+            .b{
+                margin:0 84px;
+                font-size:0;
+            }
+
+        }
+        .grade{
+            height: 230px;
+            // border:1px solid #ccc;
+            font-size:12px;
+            position:relative;
+            h3{
+                height: 35px;
+                border-bottom:1px solid #ccc;
+                border-top:1px solid #ccc;
+                background-color: #F2F2F2;
+                padding-left:10px;
+                line-height: 35px;
+            }
+            .bd{
+                width: 927px;
+                height: 126px;
+                margin:16px;
+                border:1px solid #ccc;
+                padding:16px;
+                .star-5{
+                    display: inline-block;
+                    width: 63px;
+                    height: 11px;
+                    background: url('../img/star.gif') no-repeat;
+                }
+                .pj-grade{
+                    width: 159px;
+                    p{
+                        margin:5px 0;
+                    }
+                }
+                .pj-percentage{
+                    width: 161px;
+                    border-right:1px dashed #ccc;
+                    p{
+                        margin:5px 0;
+                    }
+                }
+                .pj-comfert{
+                    width: 391px;
+                    border-right:1px dashed #ccc;
+                    padding-left:15px;
+                    tr{
+                        display: inline-block;
+                        margin:3px 0;
+                    }
+                }
+                .pj-add{
+                    padding-left:15px;
+                    a{
+                        border: 1px solid #d3701a;
+                        display: block;
+                        width: 66px;
+                        height: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        background: url('../img/addcomment.gif') repeat-x;
+                        margin-top: 8px;
+                        color:#fff; 
+                    }
+                    a:hover{
+                        text-decoration:underline;
+                    }
+
+                }
+
+            }
+            .ft{
+                position:absolute;
+                right: 10px;
+                top: 10px;
+                color:red;
+            }
+        }
+        .grade div:last-child{
+            text-align:center;
+        }
+        .other_brand{
+            h3{
+                border-bottom:1px solid #ccc;
+                height: 30px;
+                line-height: 30px;
+                font-size:14px;
+                margin:20px 0 5px;
+            }
+            .brands{
+                border-top:1px solid #ccc;
+                border-left:1px solid #ccc;
+                li{
+                    float: left;
+                    width: 96px;
+                    height: 80px;
+                    text-align: center;
+                    border-right:1px solid #ccc;
+                    border-bottom:1px solid #ccc;
+                    a{
+                        font-size:12px;
+                        color:#666;
+                    }
+                    a:hover{
+                        text-decoration:underline;
+                        color:red;
+                    }
+                    i{
+                        background: url("../img/brandlist.gif") no-repeat;
+                        width: 56px;
+                        height: 42px;
+                        display: block;
+                        margin: 5px auto;
+
+                    }
+                    .anta{
+                        background-position:0 -132px;
+                    }
+                    .msns{
+                        background-position:0 -1012px;
+                    }
+                    .p{
+                        background-position:0 -4796px;
+                    }
+                    .ld{
+                        background-position:0 -1584px;
+                    }
+                    .wy{
+                        background-position:0 -4224px;
+                    }
+                    .dk{
+                        background-position:0 -3696px;
+                    }
+                    .ds{
+                        background-position:0 -3652px;
+                    }
+                    .tmx{
+                        background-position:0 -4444px;
+                    }
+                    .ofd{
+                        background-position:0 -4268px;
+                    }
+                    .mw{
+                        background-position:0 -4576px;
+                    }
+                    .ppn{
+                        background-position:0 -1144px;
+                    }
+                    .xg{
+                        background-position:0 -3300px;
+                    }
+                    .htk{
+                        background-position:0 -1100px;
+                    }
+                    .ygr{
+                        background-position:0 -3784px;
+                    }
+                    .kq{
+                        background-position:0 -616px;
+                    }
+                    .hs{
+                        background-position:0 -2596px;
+                    }
+                    .ll{
+                        background-position:0 -4180px;
+                    }
+                    .kdn{
+                        background-position:0 -2772px;
+                    }
+                    .xql{
+                        background-position:0 -2244px;
+                    }
+                    .kt{
+                        background-position:0 -1716px;
+                    }
+
+                }
+
+            }
+            .brands li:nth-child(10n){
+                width: 95px;
+            }
+        }
     }
     
           
 }
+
+
+
+
+
+
+
