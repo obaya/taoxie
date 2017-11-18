@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/gonggong.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <!-- <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css"> -->
     <link rel="stylesheet" href="lib/jquery.lxCarousel/jquery.lxCarousel.css">
 
-    <script src="js/common.js"></script>
+    <!-- <script src="js/common.js"></script>
     <script src="js/jquery-3.2.1.js"></script> 
-    <!-- <script src="lib/bootstrap-3.3.7-dist"></script> -->
     <script src="lib/jquery.lxCarousel/jquery.lxCarousel.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/index.js"></script>
 
-    <script src="js/gonggong.js"></script>
+    <script src="js/gonggong.js"></script> -->
 
+    <!-- 1 加载require.js
+        2 加载完成后自动执行data-main中的js
+     -->
+    <script src="js/require.js" data-main="js/index"></script>
 </head>
 <body>
     <div class="taoxie">
@@ -27,7 +29,7 @@
         <!-- 公共头部 -->
         <div class="getHeader"></div>
         
-
+    
         <!-- banner轮播图部分 -->
         <div class="banner">
             <div class="container clearfix">
