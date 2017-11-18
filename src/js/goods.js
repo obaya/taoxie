@@ -132,9 +132,9 @@ jQuery(function($){
                 type:'get',
                 url:`http://localhost:3333/api/car.php?color=${c}&size=${s}`,
                 async:true,
-                success:function(data){
+                success:function(data){//data是一个对象
                     // 把数量加上去
-                    data.push(Number($('#quantity').val()));
+                    data['num'] = (Number($('#quantity').val()));
                     
                     // goodslist.push(data);
                     // // 判断当前商品是否存在cookie
@@ -142,12 +142,12 @@ jQuery(function($){
                     
                     var res = goodslist.some(function(item,idx){
                         currentIdx = idx;
-                        return (item[1] == data[1])
+                        return (item.guidID == data.guidID)
                        
                     })
                     // console.log(goodslist)
                     if(res){
-                        goodslist[currentIdx][8] += Number($('#quantity').val());
+                        goodslist[currentIdx].num += Number($('#quantity').val());
                     }else{
                         goodslist.push(data);
                         
@@ -166,33 +166,30 @@ jQuery(function($){
 
         })
 
-
-
+        // 这里应该通过传过来的id再向后台请求商品信息然后写入页面
         // 获取列表页传递过来的url
         var params = location.search;
 
         // 去掉问号
-        params=params.slice(1);
+        params=params.slice(1);//params:id=1
 
-        // 要变成对象先将字符串转为数组split
-        params = params.split('&');
+        var arr = params.split('=');
 
-        // 遍历数组，生成对象
-        var data={};
-        params.forEach(function(item){
-            // 将数组中的字符串拆成数组
-            var arr=item.split('=');
-            data[arr[0]]=decodeURI(arr[1]);
-        })
-
-        // 现在data是数据库中写入的商品信息
-        // 将商品信息写入页面
-       
-        $('.getData').get(0).innerHTML = `<h1>${data[5]} </h1>
-            <div class="info" data-guid="${data[0]}">
+        var id = arr[1];
+        
+        // 将id传给goods.php
+        ajax({
+            type:'get',
+            url:`http://localhost:3333/api/goods.php?id=${id}`,
+            async:true,
+            success:function(data){
+                console.log(data)//这里的data是一个对象
+                // data为每一个商品的详细信息
+                $('.getData').get(0).innerHTML = `<h1>${data.title} </h1>
+                <div class="info" data-guid="${data.id}">
                 <div class="d-price">
                     <label>淘鞋价：</label>
-                    <span class="realP">${data[3]} </span> 
+                    <span class="realP">${data.nPrice} </span> 
                 </div>
 
                 <div class="marketP">
@@ -205,10 +202,18 @@ jQuery(function($){
                 <div class="pjia">商品评分：
                     <span class="star star-5"></span>5.0(<a id="t_CommentTab" href="#">已有0人评价</a>)
                 </div>
-            </div>`
+            </div>`      
+                
+            }
+        });
+        
+
+        // 现在data是数据库中写入的商品信息
+        // 将商品信息写入页面
+       
+        
             
-      // $('.bigger').get(0).innerHTML = `<li><img src="${data[1]}" ></li>`
-      // $('.smaller').get(0).innerHTML = `<li><img src="${data[2]}" ></li>`
+     
         
 
         

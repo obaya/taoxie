@@ -166,7 +166,6 @@
 }
 
 .cart .car_bottom .container .carlist tbody.cargoods tr {
-  background: #FDFEEE;
   border: 1px solid #ddd;
 }
 
@@ -213,6 +212,14 @@
   text-align: center;
   margin: 0;
   border: 1px solid #ccc;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods .even {
+  background-color: #F3F3F3;
+}
+
+.cart .car_bottom .container .carlist tbody.cargoods .selected {
+  background-color: #FDFEEE;
 }
 
 .cart .car_bottom .container .carlist tfoot .first_f {

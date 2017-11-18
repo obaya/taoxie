@@ -95,34 +95,34 @@
                     </thead>
                     <!-- tbody的商品信息通过cookie获取 -->
                     <tbody class="cargoods">
-                        <!-- <tr >
-                            <td><input type="checkbox" title="全选" id="checkAll" /></td>
+                        `<!-- <tr>
+                            <td class="checkbox"><input type="checkbox" class="checkbox1" /></td>
                             <td>
-                                <img src="" alt="" />
+                                <img src="${item[2]}" />
                             </td>
-                            <td>
-                                <a href=""></a>
-                                <p>颜色：红色 尺码：29</p>
+                            <td class="title">
+                                <a href="">${item[3]}</a>
+                                <p>颜色：${item[4]} 尺码：${item[5]}</p>
                             </td>
                             <td class="price">
-                                <span></span>
+                                <span>${item[6]}</span>
                             </td>
-                            <td></td>
-                            <td>
+                            <td>-</td>
+                            <td class="qty">
                                 <div>
-                                    <a href=""></a>
-                                    <input type="text" />
-                                    <a href=""></a>
+                                    <a class="left" href=""></a>
+                                    <input type="text" value="${item[8]}"/>
+                                    <a  class="right" href=""></a>
                                 </div>
                             </td>
-                            <td>
-                                <span></span>
+                            <td class="total">
+                                <span>${total}.00</span>
                             </td>
                             
-                            <td>
+                            <td class="del">
                                 <a href="">删除</a>
                             </td>
-                        </tr> -->
+                        </tr>` -->
 
                     </tbody>
 
@@ -137,7 +137,7 @@
                                     <tr>
                                         <td class="tl"><a href="#" id="batchDelete" class="batch-delete">删除选中商品</a></td>
                                         <td><b id="totalQuantity">0</b> 件商品</td>
-                                        <td>总价：</td>
+                                        <td class="ttp">总价：</td>
                                         <td><span id="amountCash">0.00</span></td>
                                     </tr>
                                     <tr>

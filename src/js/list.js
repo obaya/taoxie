@@ -117,29 +117,10 @@ jQuery(function($){
     $goodslist.on('click','li',function(e){
         e.preventDefault();
         var goodsId = $(this).attr('data-id');
-        // 将id传给goods.php
-        ajax({
-            type:'get',
-            url:`http://localhost:3333/api/goods.php?id=${goodsId}`,
-            async:true,
-            success:function(data){
-                console.log(data)
-                // data为每一个商品的详细信息
-                // 使用location.href将商品信息传递出去
-                // 将data转为url形式
-                var params = "?";
-                // 遍历对象
-                for(var attr in data){
-                    console.log(attr)
-                    params += attr + '=' + encodeURI(data[attr])+'&';
-                }
-                // 去掉多余的&
-                params=params.slice(0,-1);
-                
-                location.href='goods.html'+ params;      
-                
-            }
-        });
+
+        // 这里直接将id传给goods即可
+        location.href='goods.html?id='+ goodsId;
+        
         
     })
            
@@ -182,9 +163,6 @@ jQuery(function($){
                 <div class="price">抢购价：${i1.price}</div>
                 </li>`
             }).join('');
-
-            
-
         }
     });
 

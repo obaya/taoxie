@@ -149,9 +149,7 @@
                     }
                 }
                 tbody.cargoods tr{
-                    background: #FDFEEE;
                     border:1px solid #ddd; 
-                    // padding-left:10px;
                     td{
                        text-align:center;
                     }
@@ -193,6 +191,16 @@
                             border:1px solid#ccc;
                         }
                     }
+                }
+                // 偶数行灰色
+                tbody.cargoods .even{
+                    background-color:#F3F3F3;
+                    
+                }
+                // 选中checkbox高亮
+                tbody.cargoods .selected{
+                    background-color: #FDFEEE;
+
                 }
 
                 tfoot{

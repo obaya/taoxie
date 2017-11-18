@@ -23,14 +23,14 @@
     // $conn->close();
 
     // 使用查询结果集
-    // $row = $result->fetch_all(MYSQLI_ASSOC);
+    $row = $result->fetch_all(MYSQLI_ASSOC);
     // 只有一条数据用fetch_row
-    $row = $result->fetch_row();
+    // $row = $result->fetch_row();
     
     // var_dump($row);
 
     // 把数组转换成json字符串
-    $res = json_encode($row,JSON_UNESCAPED_UNICODE);
+    $res = json_encode($row[0],JSON_UNESCAPED_UNICODE);
     // var_dump( $res)
     echo "$res";
 ?>
